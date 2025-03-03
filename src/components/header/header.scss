@@ -1,0 +1,182 @@
+.header {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+        height: auto;
+        transition: width 0.3s ease;
+    }
+
+    .nav-menu {
+        ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 15px;
+            background: #1351D80D;
+            border-radius: 20px;
+
+            li {
+                a {
+                    color: #333;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    padding: 8px 12px;
+                    border-radius: 4px;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+
+                    &:hover {
+                        background-color: #d0d0e1;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: #f0f8ff;
+                padding: 15px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        // flex-direction: column;
+        gap: 15px;
+
+        .phone {
+            padding: 0 10px;
+            font-size: 1rem;
+            color: #333;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            padding-right: 15px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 8px;
+
+            span {
+                color: #1351D8;
+            }
+        }
+
+        .contact-btn {
+            background-color: #007bff; // Ko‘k tugma, tasvirdagi kabi
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+
+        span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    // Responsiv Design
+    @media (max-width: 768px) {
+        .nav-menu {
+            display: none;
+
+            &.open {
+                display: block;
+            }
+
+            ul {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .header-right {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+        .logo {
+            width: 60px;
+        }
+    }
+
+    @media (max-width: 300px) {
+        padding: 10px 0;
+
+        .container {
+            padding: 0 10px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .nav-menu.open ul li a {
+            font-size: 0.9rem;
+            padding: 6px 10px;
+        }
+
+        .phone {
+            font-size: 0.9rem;
+            padding-right: 10px;
+        }
+
+        .contact-btn {
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+    }
+}
