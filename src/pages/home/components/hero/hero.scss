@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 86px);
-    background: #F8FBFE;
+    // background: #F8FBFE;
     position: relative;
     text-align: center;
 
@@ -29,6 +29,11 @@
         z-index: 2;
     }
 
+    &__container {
+        position: relative;
+        z-index: 3;
+    }
+
 
     &__subtitle {
         font-weight: 500;
@@ -43,8 +48,7 @@
         font-weight: 500;
         font-size: 70px;
         line-height: 66px;
-        letter-spacing: -3%;
-        max-width: 900px;
+        // max-width: 910px;
         color: #212529;
     }
 
@@ -64,7 +68,7 @@
         border: none;
         padding: 12px 30px;
         border-radius: 25px;
-        font-size: 1.1rem;
+        font-size: 13px;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
@@ -74,6 +78,7 @@
 
         &:hover {
             background-color: #0056b3;
+            color: white;
         }
 
         span {
