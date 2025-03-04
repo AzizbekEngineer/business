@@ -3,8 +3,6 @@ import React from "react";
 import "./concepts.scss";
 import ConceptCard from "./ConceptCard";
 
-// Ma'lumotlar massivi
-
 const Concepts = ({ data }) => {
     return (
         <div className="concepts">
