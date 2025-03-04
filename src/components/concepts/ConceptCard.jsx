@@ -1,35 +1,3 @@
-// import NorthEastIcon from "@mui/icons-material/NorthEast";
-// import { Stack, Typography } from "@mui/material";
-
-// const ConceptCard = ({ item }) => {
-//     return (
-//         <div key={item.id} className="concepts__card">
-//             <img src={item.image} alt={item.title} />
-//             <Stack gap={0}>
-//                 <div className="concepts__date">
-//                     <span>{item.date}</span>
-//                     <span>{item.category}</span>
-//                 </div>
-//                 <Typography
-//                     component={"h3"}
-//                     flex={1}
-//                     className="concepts__title"
-//                     sx={{ flexGrow: 1 }}
-//                 >
-//                     {item.title}
-//                 </Typography>
-//                 <hr />
-//                 <p className="concepts__desc">{item.description}</p>
-//                 <button className="concepts__btn">
-//                     <NorthEastIcon />
-//                 </button>
-//             </Stack>
-//         </div>
-//     );
-// };
-
-// export default ConceptCard;
-
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import { Stack, Typography } from "@mui/material";
 
