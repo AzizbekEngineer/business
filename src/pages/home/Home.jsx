@@ -12,6 +12,8 @@ import Partner from "./components/partner/Partner";
 import Service from "./components/service/Service";
 import Opportunities from "./components/opportunities/Opportunities";
 import HelpSection from "../../components/help-section/HelpSection";
+import NewsCard from "./components/newsCard/NewsCard";
+import Group from "./components/group/Group";
 
 const fakeData = [
   {
@@ -62,8 +64,10 @@ const Home = () => {
           }
         />
         <Concepts data={fakeData} />
-        <Contact />
-        <HelpSection />
+        <NewsCard />
+        <Group />
+        {/* <Contact />
+        <HelpSection /> */}
       </Stack>
     </div>
   );

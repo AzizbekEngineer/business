@@ -1,65 +1,148 @@
 import React from "react";
+import footerLogo from "../../../assets/icons/footerLogo.svg";
+import youtube from "../../../assets/icons/youtube.svg";
+import work from "../../../assets/icons/work.svg";
+import shop from "../../../assets/icons/shop.svg";
+import web from "../../../assets/icons/web.svg";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        repellendus ipsa, unde minus ullam tenetur dolores amet reprehenderit
-        illum dolore praesentium libero doloremque ex quaerat commodi dolor esse
-        labore vitae quidem quia rerum. Modi necessitatibus et aspernatur
-        explicabo pariatur architecto! Inventore, hic repudiandae ullam
-        consequuntur, nesciunt, odio sapiente asperiores mollitia doloremque
-        minima rerum earum cumque deleniti! Nisi dolor aliquid suscipit facere
-        sit, ex expedita temporibus itaque aspernatur, pariatur consequatur sunt
-        officia enim nihil, tenetur molestias. Porro sapiente perspiciatis illo
-        magni sed similique eius. Possimus eveniet dolorem sint consequuntur
-        soluta sunt veniam, hic sapiente, repellendus velit excepturi ut id
-        voluptates architecto, accusantium temporibus vel laudantium quibusdam
-        commodi eaque ex magni. Exercitationem animi consequuntur cumque amet
-        similique ratione quis qui aperiam vero earum ipsum dolore sint minus
-        cum, dolorum delectus labore ullam nemo deleniti itaque modi, culpa
-        quibusdam rem omnis. Necessitatibus id ipsa repellat, recusandae facilis
-        excepturi maiores nesciunt sint pariatur dolores quo voluptatibus atque
-        error nam quos! Maiores tempore hic illo tempora omnis laborum! Iusto
-        facilis quasi vitae ab voluptatum provident id ipsa at odio, quae
-        voluptates, pariatur doloribus atque deleniti rerum laborum officia
-        modi. Iusto perferendis, minus rerum labore quo voluptas excepturi
-        ducimus aperiam veritatis id dolorum non delectus deleniti dolores sunt
-        aliquam tempora. Ad ea dolor eligendi minus debitis dolores? Adipisci
-        itaque officiis et vero unde ipsa, autem, quas harum eius blanditiis
-        illum ipsum corporis pariatur placeat, enim dicta perspiciatis aliquam
-        suscipit dolores cupiditate officia soluta reiciendis? Corporis laborum
-        temporibus eum rem reiciendis dicta explicabo perspiciatis quibusdam
-        vitae ad consectetur praesentium placeat aliquid unde debitis nisi iure,
-        dignissimos quia consequuntur error laudantium. Impedit dolore,
-        asperiores dolorum assumenda magnam est exercitationem fuga delectus
-        quasi, ex veritatis et consequuntur. Id nisi quo in exercitationem
-        accusantium quisquam consequuntur quis, officia expedita cupiditate
-        quidem. Quia, eum culpa? Quos velit vero facere quidem, delectus fugiat
-        deleniti harum aspernatur architecto molestias ipsam dolorem quis, quam
-        minima quia consectetur commodi fugit voluptas qui sint distinctio.
-        Adipisci reprehenderit non officiis vitae aperiam a, amet modi sed, id,
-        vero quam itaque pariatur accusamus provident ullam velit doloremque et
-        praesentium autem quo quaerat dolorum! Quibusdam ex iure, hic sequi
-        iusto voluptas nesciunt libero. Neque quaerat numquam voluptates aut
-        dolorum facere! Expedita esse nesciunt mollitia excepturi, cupiditate
-        repudiandae ratione nihil incidunt nulla labore voluptates sint
-        accusamus unde reiciendis ipsam fuga eos quaerat laudantium doloremque
-        harum distinctio dolores? Distinctio, iste. Perspiciatis cupiditate
-        nulla atque vitae, quia id laudantium pariatur ex hic sed voluptatum ab
-        deleniti laborum officiis quas error neque tempore possimus quos
-        corporis dolore harum, maxime obcaecati fugiat. Neque soluta quia sit
-        nulla beatae illo adipisci eum. Dignissimos quia doloremque, eligendi id
-        quis unde rerum placeat assumenda modi adipisci labore nisi vitae totam
-        temporibus laboriosam ratione architecto, praesentium suscipit dolorem
-        corporis nemo quisquam atque reprehenderit odio? Sapiente ad repudiandae
-        hic optio, recusandae numquam sequi odio molestiae doloribus, quia
-        vitae! Vero eum eligendi accusamus omnis? Eum est hic quasi! Corrupti
-        tenetur doloremque obcaecati facere dolor, laborum neque fugiat eveniet
-        repellendus aspernatur quasi, optio enim recusandae, tempore facilis non
-        accusamus totam fuga.
-      </p>
+    <div className="footer">
+      <div className="container">
+        <div className="footer__top">
+          <div className="footer__top__left">
+            <div className="footer__logo">
+              <img src={footerLogo} alt="" />
+            </div>
+            <p className="footer__desc">
+              Biz sizning biznesingizni oldinga siljitish uchun tajriba va
+              yordam beramiz.
+            </p>
+            <form className="footer__btns">
+              <input type="text" placeholder="Email kiriting" />
+              <button className="footer__btn">Boshlash</button>
+            </form>
+            <div className="footer__icons">
+              <img src={youtube} alt="" />
+              <img src={web} alt="" />
+              <img src={work} alt="" />
+              <img src={shop} alt="" />
+            </div>
+          </div>
+          <div className="footer__right">
+            <h3 className="footer__title">Keling, ajoyib narsani boshlaylik</h3>
+            <p className="footer__desc">
+              Bizning IT-mutaxassislar jamoasi siz bilan uchrashishni va
+              biznesingizga moslashtirilgan qimmatli tushunchalarni taqdim
+              etishni intiqlik bilan kutmoqda.
+            </p>
+            <div className="footer__btn">Hoziroq uchrashuv belgilang</div>
+            <div className="footer__statistics">
+              <div className="footer__statistic">
+                <h4 className="footer__subtitle">
+                  <span>2</span>daqiqa
+                </h4>
+                <h4 className="footer__info">Javob berish vaqti</h4>
+              </div>
+              <div className="footer__statistic">
+                <h4 className="footer__subtitle">
+                  <span>99%</span>
+                </h4>
+                <h4 className="footer__info">Mijozlarning qoniqishi</h4>
+              </div>
+              <div className="footer__statistic">
+                <h4 className="footer__subtitle">
+                  <span>22+</span> yil
+                </h4>
+                <h4 className="footer__info">Dala tajribasi</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer__line"></div>
+        <div className="footer__middle">
+          <div className="footer__middle__left">
+            <ul className="footer__list">
+              <li className="footer__item footer__item__title">Xizmatlar</li>
+              <li className="footer__item">IT support</li>
+              <li className="footer__item">Web Design</li>
+              <li className="footer__item">Development</li>
+              <li className="footer__item">Cloud Things</li>
+              <li className="footer__item">E-Commerce</li>
+              <li className="footer__item">CRM Solutions</li>
+            </ul>
+            <ul className="footer__list">
+              <li className="footer__item footer__item__title">Kompaniya</li>
+              <li className="footer__item">Blog</li>
+              <li className="footer__item">About Us</li>
+              <li className="footer__item">Partners</li>
+              <li className="footer__item">Careers</li>
+              <li className="footer__item">Events</li>
+              <li className="footer__item">Team</li>
+            </ul>
+            <ul className="footer__list">
+              <li className="footer__item footer__item__title">Mahsulotlar</li>
+              <li className="footer__item">Case Studio</li>
+              <li className="footer__item">Our Pricing</li>
+              <li className="footer__item">Partners</li>
+              <li className="footer__item">Careers</li>
+              <li className="footer__item">Events</li>
+              <li className="footer__item">Team</li>
+            </ul>
+            <ul className="footer__list">
+              <li className="footer__item footer__item__title">Mahsulotlar</li>
+              <li className="footer__item">Case Studio</li>
+              <li className="footer__item">Our Pricing</li>
+              <li className="footer__item">Partners</li>
+              <li className="footer__item">Careers</li>
+              <li className="footer__item">Events</li>
+              <li className="footer__item">Team</li>
+            </ul>
+          </div>
+          <div className="footer__middle__right">
+            <div className="footer__infos">
+              <h3>Telefon raqam</h3>
+              <ul>
+                <li>
+                  <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
+                </li>
+                <li>
+                  <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer__infos">
+              <h3>Pochta manzili</h3>
+              <ul>
+                <li>
+                  <a href="email:outlook@mail.com">outlook@mail.com</a>
+                </li>
+                <li>
+                  <a href="email:joylinks@mail.com">joylinks@mail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="footer__line"></div>
+        <div className="footer__bottom">
+          <div className="footer__bottom__icons">
+            <FacebookOutlinedIcon />
+            <TwitterIcon />
+            <TelegramIcon />
+            <InstagramIcon />
+          </div>
+          <p className="footer__bottom__desc">
+            © 2023 Barcha huquqlar Joylinks tomonidan himoyalangan
+          </p>
+        </div>
+      </div>
+      <div className="footer__back"></div>
     </div>
   );
 };
