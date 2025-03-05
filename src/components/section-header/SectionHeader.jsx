@@ -22,6 +22,7 @@ const SectionHeader = ({ subtitle, title, desc, titleColor, descColor }) => {
                     fontWeight: 500,
                     fontSize: "45px",
                     lineHeight: "42px",
+                    letterSpacing:'0px',
                     color: `${titleColor ? titleColor : "#212529"}`,
                     mt: "14px",
                     mb: "16px",
