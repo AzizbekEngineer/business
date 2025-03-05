@@ -7,11 +7,9 @@ import img1 from "../../assets/images/concepts1.png";
 import img2 from "../../assets/images/concepts2.png";
 import img3 from "../../assets/images/concepts3.png";
 import { Box, Stack } from "@mui/material";
-import Contact from "../../components/contact/Contact";
 import Partner from "./components/partner/Partner";
 import Service from "./components/service/Service";
 import Opportunities from "./components/opportunities/Opportunities";
-import HelpSection from "../../components/help-section/HelpSection";
 import NewsCard from "./components/newsCard/NewsCard";
 import Group from "./components/group/Group";
 
