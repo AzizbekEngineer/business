@@ -11,6 +11,7 @@ import Contact from "../../components/contact/Contact";
 import Partner from "./components/partner/Partner";
 import Service from "./components/service/Service";
 import Opportunities from "./components/opportunities/Opportunities";
+import HelpSection from "../../components/help-section/HelpSection";
 
 const fakeData = [
   {
@@ -62,6 +63,7 @@ const Home = () => {
         />
         <Concepts data={fakeData} />
         <Contact />
+        <HelpSection />
       </Stack>
     </div>
   );
