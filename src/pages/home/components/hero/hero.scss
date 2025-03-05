@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 86px);
+    min-height: 60vh;
     // background: #F8FBFE;
     position: relative;
     text-align: center;
@@ -20,7 +20,7 @@
 
     &__back2 {
         position: absolute;
-        bottom: -200px;
+        bottom: -300px;
         right: 0;
         height: 800px;
         width: 900px;
