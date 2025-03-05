@@ -8,6 +8,9 @@ import img2 from "../../assets/images/concepts2.png";
 import img3 from "../../assets/images/concepts3.png";
 import { Box, Stack } from "@mui/material";
 import Contact from "../../components/contact/Contact";
+import Partner from "./components/partner/Partner";
+import Service from "./components/service/Service";
+import Opportunities from "./components/opportunities/Opportunities";
 
 const fakeData = [
   {
@@ -46,9 +49,9 @@ const Home = () => {
     <div>
       <Hero />
       <Specialization />
-
-      {/* kerakli componentlar */}
-
+      <Partner />
+      <Service />
+      <Opportunities />
       <Stack gap={"50px"} className="container">
         <SectionHeader
           subtitle={"KUNLIK YANGILIKLAR"}
@@ -57,7 +60,6 @@ const Home = () => {
             "Axborot shakllanayotgan tez sur'atda dunyoda bizning kundalik yangiliklar xizmatimiz so'nggi o'zgarishlardan xabardor bo'lishdir"
           }
         />
-
         <Concepts data={fakeData} />
         <Contact />
       </Stack>
