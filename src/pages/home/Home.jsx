@@ -66,8 +66,6 @@ const Home = () => {
         <Concepts data={fakeData} />
         <NewsCard />
         <Group />
-        {/* <Contact />
-        <HelpSection /> */}
       </Stack>
     </div>
   );
