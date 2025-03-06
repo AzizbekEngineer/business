@@ -1,0 +1,53 @@
+.accordion {
+    width: 100%;
+    margin: 0 auto;
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    &__card {
+        border: 1px solid #e0e0e0;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}
+
+.panel-header {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #e3f2fd;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.panel-header:hover {
+    background-color: #bbdefb;
+}
+
+.info-icon {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.panel-content {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+}
