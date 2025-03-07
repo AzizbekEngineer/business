@@ -11,41 +11,72 @@
     }
 
     &__card {
-        border: 1px solid #e0e0e0;
-        margin-bottom: 10px;
-        border-radius: 5px;
+        background: #FFFFFF;
+        border-radius: 10px;
     }
-}
 
-.panel-header {
-    padding: 15px;
-    cursor: pointer;
-    background: #FFFFFF;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s;
-}
+    &__icon {
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #1351D81A;
+        border-radius: 10px;
 
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
 
+    &-header {
+        padding: 15px;
+        cursor: pointer;
+        // background: #FFFFFF;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: background-color 0.3s;
+    }
 
-.info-icon {
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    background-color: #2196f3;
-    color: white;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: bold;
-}
+    &-content {
+        padding: 15px;
+        background-color: #fff;
+        border-top: 1px solid #e0e0e0;
+        transition: all 0.3s ease-in-out;
+    }
 
-.panel-content {
-    padding: 15px;
-    background-color: #fff;
-    border-top: 1px solid #e0e0e0;
-    transition: all 0.3s ease-in-out;
+    @media (max-width:870px) {
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+
+        &-header {
+            grid-template-columns: 52px 1fr;
+            gap: 15px;
+        }
+    }
+
+    @media (max-width:440px) {
+        &__icon {
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        &-header {
+            gap: 10px;
+            padding: 8px;
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
 }
