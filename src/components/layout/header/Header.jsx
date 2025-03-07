@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.scss";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import headerLogo from "../../../assets/icons/headerLogo.png";
@@ -22,22 +22,32 @@ const Header = () => {
           >
             <ul>
               <li>
-                <Link to={"/"}>Home</Link>
+                <NavLink className={"header__nav__link"} to={"/"}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to={"about"}>About</Link>
+                <NavLink className={"header__nav__link"} to={"about"}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <Link to={"service"}>Service</Link>
+                <NavLink className={"header__nav__link"} to={"service"}>
+                  Service
+                </NavLink>
               </li>
               <li>
-                <a href="#news-events">News & Events</a>
+                <NavLink className={"header__nav__link"} to={"news"}>
+                  News & Events
+                </NavLink>
               </li>
               <li>
                 <a href="#partners">Partners</a>
               </li>
               <li>
-                <Link to={"faq"}>Faq</Link>
+                <NavLink className={"header__nav__link"} to={"faq"}>
+                  Faq
+                </NavLink>
               </li>
               <li>
                 <a href="#uz">UZ</a>
