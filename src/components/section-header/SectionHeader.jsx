@@ -16,10 +16,15 @@ const SectionHeader = ({
           fontWeight: 500,
           fontSize: "12px",
           lineHeight: "14.4px",
-          letterSpacing: "35%",
-          color: "#1351D8",
           letterSpacing: "3px",
+          color: "#1351D8",
           textAlign: `${titleAlign ? titleAlign : "start"}`,
+
+          "@media (max-width: 300px)": {
+            fontSize: "10px",
+            lineHeight: "12px",
+            letterSpacing: "2px",
+          },
         }}
       >
         {subtitle && subtitle}
@@ -33,8 +38,16 @@ const SectionHeader = ({
           letterSpacing: "0px",
           color: `${titleColor ? titleColor : "#212529"}`,
           mt: "14px",
-          textAlign: `${titleAlign ? titleAlign : "start"}`,
           mb: "16px",
+          textAlign: `${titleAlign ? titleAlign : "start"}`,
+          "@media (max-width: 650px)": {
+            fontSize: "32px",
+            lineHeight: "42px",
+          },
+          "@media (max-width: 420px)": {
+            fontSize: "24px",
+            lineHeight: "30px",
+          },
         }}
       >
         {title && title}

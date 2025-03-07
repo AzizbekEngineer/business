@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 import "./header.scss";
 import { Link } from "react-router";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import headerLogo from "../../../assets/icons/headerLogo.png";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const [hide, setHide] = useState(false);
 
   return (
     <header id="header">
       <div className="container">
         <div className="header">
           <div className="header-left">
-            <h2>Logo</h2>
+            <img src={headerLogo} width={110} height={35} alt="" />
           </div>
-          <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
+          <nav
+            className={`header__nav__list ${
+              hide ? "header__nav__list-show" : ""
+            }`}
+          >
             <ul>
               <li>
                 <Link to={"/"}>Home</Link>
@@ -40,19 +43,29 @@ const Header = () => {
                 <a href="#uz">UZ</a>
               </li>
             </ul>
-          </nav>
-          <div className="header-right">
             <div className="phone">
               <span>Call Us:</span>
               <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
             </div>
+          </nav>
+          <div className="header-right">
             <button className="contact-btn">Contact Us</button>
           </div>
-          <div className="hamburger" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          {!hide ? (
+            <button
+              onClick={() => setHide(true)}
+              className="header__nav__right-menu"
+            >
+              <MenuIcon />
+            </button>
+          ) : (
+            <button
+              onClick={() => setHide(false)}
+              className="header__nav__right-menu"
+            >
+              <CloseIcon />
+            </button>
+          )}
         </div>
       </div>
     </header>

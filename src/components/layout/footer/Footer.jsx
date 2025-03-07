@@ -23,7 +23,7 @@ const Footer = () => {
               Biz sizning biznesingizni oldinga siljitish uchun tajriba va
               yordam beramiz.
             </p>
-            <form className="footer__btns">
+            <form className="footer__forms">
               <input type="text" placeholder="Email kiriting" />
               <button className="footer__btn">Boshlash</button>
             </form>

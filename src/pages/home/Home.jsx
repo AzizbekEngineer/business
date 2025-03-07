@@ -53,7 +53,7 @@ const Home = () => {
       <Partner />
       <Service />
       <Opportunities />
-      <Stack gap={"50px"} className="container">
+      {/* <Stack gap={"50px"} className="container">
         <SectionHeader
           subtitle={"KUNLIK YANGILIKLAR"}
           title={"Kundalik tushunchalar haqida ko'proq o'qing"}
@@ -64,7 +64,7 @@ const Home = () => {
         <Concepts data={fakeData} />
         <NewsCard />
         <Group />
-      </Stack>
+      </Stack> */}
     </div>
   );
 };

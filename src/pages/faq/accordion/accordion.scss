@@ -20,7 +20,7 @@
 .panel-header {
     padding: 15px;
     cursor: pointer;
-    background-color: #e3f2fd;
+    background: #FFFFFF;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -28,9 +28,7 @@
     transition: background-color 0.3s;
 }
 
-.panel-header:hover {
-    background-color: #bbdefb;
-}
+
 
 .info-icon {
     display: inline-flex;
