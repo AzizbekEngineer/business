@@ -8,26 +8,36 @@ const Popular = () => {
   return (
     <Box component={"section"} className="container">
       <Stack
-        padding={"60px"}
-        bgcolor={"#F3F6FD"}
-        border={"1px solid #1351D81A"}
-        borderRadius={"10px"}
+        sx={{
+          padding: { xs: "20px", sm: "40px", md: "60px" },
+          bgcolor: "#F3F6FD",
+          border: "1px solid #1351D81A",
+          borderRadius: "10px",
+        }}
       >
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "1fr 210px",
-            justifyContent: "space-between",
+            gridTemplateColumns: { xs: "1fr", sm: "1fr 210px" },
             gap: "30px",
             alignItems: "center",
           }}
         >
           <SectionHeader
-            subtitle={"KOMPANYAMIZ"}
-            title={"Nima uchun kompaniyamiz juda mashhur?"}
+            subtitle={"KOMPANIYAMIZ"}
+            title={
+              <Typography
+                sx={{
+                  fontSize: { xs: "24px", sm: "28px", md: "32px" },
+                  fontWeight: "bold",
+                }}
+              >
+                Nima uchun kompaniyamiz juda mashhur?
+              </Typography>
+            }
             desc={"Sayohatingizni boshlash uchun bugun biz bilan bog'laning!"}
           />
-          <Stack>
+          <Stack sx={{ textAlign: { xs: "center", sm: "left" } }}>
             <Button
               sx={{
                 border: "none",
@@ -36,6 +46,7 @@ const Popular = () => {
                 color: "white",
                 padding: "13px 26px",
                 fontSize: "13px",
+                width: { xs: "100%", sm: "auto" },
               }}
             >
               Biz bilan bog’lanish

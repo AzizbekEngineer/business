@@ -27,3 +27,9 @@ button {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+@media (max-width: 850px) {
+  .MuiStack-root .css-12pyd5y-MuiStack-root {
+    flex-direction: column;
+  }
+}
