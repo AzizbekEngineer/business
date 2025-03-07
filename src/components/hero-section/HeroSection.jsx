@@ -28,6 +28,14 @@ const HeroSection = ({ subtitle, title, desc, titleColor, descColor }) => {
           color: `${titleColor ? titleColor : "#212529"}`,
           mt: "25px",
           mb: "20px",
+          "@media (max-width: 850px)": {
+            fontSize: "45px",
+            lineHeight: "50px",
+          },
+          "@media (max-width: 500px)": {
+            fontSize: "28px",
+            lineHeight: "35px",
+          },
         }}
       >
         {title && title}
@@ -38,6 +46,10 @@ const HeroSection = ({ subtitle, title, desc, titleColor, descColor }) => {
           fontSize: "18px",
           lineHeight: "22px",
           color: `${descColor ? descColor : "#1C1C1CB2"}`,
+          "@media (max-width: 500px)": {
+            fontSize: "16px",
+            lineHeight: "18px",
+          },
         }}
       >
         {desc && desc}
