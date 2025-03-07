@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServiceSection from "../../components/service-section/ServiceSection";
 import { Box, Stack } from "@mui/material";
 import HelpSection from "../../components/help-section/HelpSection";
@@ -8,6 +8,9 @@ import Accordion from "./accordion/Accordion";
 import SectionHeader from "../../components/section-header/SectionHeader";
 
 const Faq = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <div>
       <Box

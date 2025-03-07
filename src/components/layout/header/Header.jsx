@@ -22,22 +22,38 @@ const Header = () => {
           >
             <ul>
               <li>
-                <NavLink className={"header__nav__link"} to={"/"}>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"/"}
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink className={"header__nav__link"} to={"about"}>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"about"}
+                >
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink className={"header__nav__link"} to={"service"}>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"service"}
+                >
                   Service
                 </NavLink>
               </li>
               <li>
-                <NavLink className={"header__nav__link"} to={"news"}>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"news"}
+                >
                   News & Events
                 </NavLink>
               </li>
@@ -45,7 +61,11 @@ const Header = () => {
                 <a href="#partners">Partners</a>
               </li>
               <li>
-                <NavLink className={"header__nav__link"} to={"faq"}>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"faq"}
+                >
                   Faq
                 </NavLink>
               </li>
