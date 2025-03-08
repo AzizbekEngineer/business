@@ -30,6 +30,6 @@ button {
 
 @media (max-width: 850px) {
   .MuiStack-root .css-12pyd5y-MuiStack-root {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }
