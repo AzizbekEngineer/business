@@ -8,19 +8,19 @@ import Faq from "./pages/faq/Faq";
 import News from "./pages/news/News";
 
 const App = () => {
-  return (
-    <Fragment>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="service" element={<Service />} />
-          <Route path="faq" element={<Faq />} />
-          <Route path="news" element={<News />} />
-        </Routes>
-      </Layout>
-    </Fragment>
-  );
+    return (
+        <Fragment>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="service" element={<Service />} />
+                    <Route path="news" element={<News />} />
+                    <Route path="faq" element={<Faq />} />
+                </Routes>
+            </Layout>
+        </Fragment>
+    );
 };
 
 export default App;
