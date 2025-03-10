@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./components/hero/Hero";
 import Concepts from "../../components/concepts/Concepts";
 import SectionHeader from "../../components/section-header/SectionHeader";
@@ -46,6 +46,9 @@ const fakeData = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <div>
       <Hero />

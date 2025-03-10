@@ -35,12 +35,6 @@
         letter-spacing: 0%;
     }
 
-    &__btns {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
     &__btn {
         padding: 8px 15px;
         font-weight: 400;
@@ -60,7 +54,11 @@
         }
     }
 
-    &__btns {
+    &__forms {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
         input {
             border: 1px solid #FFFFFF33;
             padding: 8px 15px;
@@ -225,5 +223,72 @@
         line-height: 18px;
         letter-spacing: 0%;
         color: #FFFFFFB2;
+    }
+
+    @media (max-width: 1092px) {
+        &__statistics {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        &__top__left {
+            padding: 50px 20px 10px 0;
+            border-right: 1px solid #D9D9D999,
+        }
+
+        &__right {
+            padding: 50px 0 0 40px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        &__middle__left {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        &__top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__right {
+            padding: 30px 0;
+        }
+
+        &__top__left {
+            padding: 50px 0 0;
+            border: none;
+        }
+
+        &__middle__left {
+            padding: 0;
+            border: none;
+        }
+    }
+
+    @media (max-width: 438px) {
+        &__middle__left {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+
+    @media (max-width: 342px) {
+        &__forms {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
     }
 }

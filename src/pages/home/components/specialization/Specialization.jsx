@@ -18,6 +18,11 @@ const Specialization = () => {
         bgcolor={"#F3F6FD"}
         border={"1px solid #1351D81A"}
         borderRadius={"10px"}
+        sx={{
+          "@media (max-width: 640px)": {
+            padding: "40px 30px",
+          },
+        }}
       >
         <SectionHeader
           subtitle={"IXTISOSLASHTIRISH"}

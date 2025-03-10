@@ -22,6 +22,7 @@
         img {
             width: 100%;
             object-fit: cover;
+            height: 100%;
         }
     }
 
@@ -75,5 +76,37 @@
         line-height: 20px;
         letter-spacing: 0%;
         color: #1C1C1CB3;
+    }
+
+    @media (max-width:1070px) {
+        &__content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width:940px) {
+        &__top {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width:940px) {
+        &__top {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &__cards {
+            padding: 20px 10px 19px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 19px;
+        }
+
+        &__desc {
+            margin: 0 10px;
+            padding: 8px;
+        }
     }
 }

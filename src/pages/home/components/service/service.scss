@@ -167,4 +167,37 @@
     &__card__info__btn {
         margin-left: calc(100% - 42px);
     }
+
+    @media (max-width:1170px) {
+        &__top {
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width:1038px) {
+        &__cards__top {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width:1000px) {
+        &__card__bottom {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width:530px) {
+        &__cards__top {
+            grid-template-columns: 1fr;
+        }
+
+        &__cards__bottom {
+            grid-template-columns: 1fr;
+        }
+    }
 }

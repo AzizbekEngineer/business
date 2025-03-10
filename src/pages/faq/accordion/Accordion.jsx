@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import accordion from "../../../assets/icons/accordion.svg";
 import "./accordion.scss";
 
 const Accordion = () => {
@@ -50,15 +51,18 @@ const Accordion = () => {
         {panels.map((panel, index) => (
           <div className="accordion__card" key={index}>
             <div
-              className={`panel-header ${
+              className={`accordion-header ${
                 activeIndex === index ? "active" : ""
               }`}
               onClick={() => handleClick(index)}
             >
-              <span className="info-icon">i</span> {panel.title}
+              <div className="accordion__icon">
+                <img src={accordion} alt="" />
+              </div>
+              <h3> {panel.title}</h3>
             </div>
             {activeIndex === index && (
-              <div className="panel-content">{panel.content}</div>
+              <div className="accordion-content">{panel.content}</div>
             )}
           </div>
         ))}

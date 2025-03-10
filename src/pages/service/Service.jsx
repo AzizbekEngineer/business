@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import HeroSection from "../../components/hero-section/HeroSection";
 import buildingImage from "../../assets/images/serviceHero.svg";
@@ -9,21 +9,36 @@ import ServiceSection from "../../components/service-section/ServiceSection";
 import Contact from "../../components/contact/Contact";
 
 const Service = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
+
   return (
     <Box>
       <Box
-        component={"section"}
+        component="section"
         className="container"
         sx={{ margin: "100px auto" }}
       >
         <HeroSection
-          title={"Sizni eng yaxshi yechimlar va yordam bilan kuchaytiradi"}
+          title={
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: { xs: "18px", md: "24px", lg: "52px" },
+                textAlign: "center",
+              }}
+            >
+              Sizni eng yaxshi yechimlar va yordam bilan kuchaytiradi
+            </Typography>
+          }
           subtitle={"BIZNING TARIFLAR"}
           desc={
-            "Joylinks kompaniyasida biz har qanday ehtiyojingizni qondirish uchun ajoyib yechimlar va doimiy yordam taqdim etishga sodiqmiz."
+            "Joylinks kompaniyasida biz har qanday ehtiyojingizni qondirish uchun ajoyib yechimlar va doimiy yordam taqdim etishga sodiqmiz."
           }
         />
       </Box>
+
       <Box
         component={"section"}
         className="container"

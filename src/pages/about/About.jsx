@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Cards from "./components/cards/Cards";
 import Popular from "./components/popular/Popular";
 import Specialists from "./components/specialists/Specialists";
@@ -8,6 +8,9 @@ import { Box } from "@mui/material";
 import Contact from "../../components/contact/Contact";
 
 const About = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <>
       <Cards />

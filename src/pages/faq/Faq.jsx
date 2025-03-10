@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServiceSection from "../../components/service-section/ServiceSection";
 import { Box, Stack } from "@mui/material";
 import HelpSection from "../../components/help-section/HelpSection";
@@ -8,6 +8,9 @@ import Accordion from "./accordion/Accordion";
 import SectionHeader from "../../components/section-header/SectionHeader";
 
 const Faq = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <div>
       <Box
@@ -40,6 +43,11 @@ const Faq = () => {
           bgcolor={"#F3F6FD"}
           border={"1px solid #1351D81A"}
           borderRadius={"10px"}
+          sx={{
+            "@media (max-width: 640px)": {
+              padding: "40px 30px",
+            },
+          }}
         >
           <Box
             sx={{

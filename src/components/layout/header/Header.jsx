@@ -1,64 +1,105 @@
 import React, { useState } from "react";
 import "./header.scss";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import headerLogo from "../../../assets/icons/headerLogo.png";
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [hide, setHide] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <header id="header">
-            <div className="container">
-                <div className="header">
-                    <div className="header-left">
-                        <h2>Logo</h2>
-                    </div>
-                    <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
-                        <ul>
-                            <li>
-                                <Link to={"/"}>Home</Link>
-                            </li>
-                            <li>
-                                <Link to={"about"}>About</Link>
-                            </li>
-                            <li>
-                                <Link to={"service"}>Service</Link>
-                            </li>
-                            <li>
-                                <Link to="news">News & Events</Link>
-                            </li>
-                            <li>
-                                <a href="#partners">Partners</a>
-                            </li>
-                            <li>
-                                <Link to={"faq"}>Faq</Link>
-                            </li>
-                            <li>
-                                <a href="#uz">UZ</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div className="header-right">
-                        <div className="phone">
-                            <span>Call Us:</span>
-                            <a href="tel:+998 33 752 20 22">
-                                +998 33 752 20 22
-                            </a>
-                        </div>
-                        <button className="contact-btn">Contact Us</button>
-                    </div>
-                    <div className="hamburger" onClick={toggleMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+  return (
+    <header id="header">
+      <div className="container">
+        <div className="header">
+          <div className="header-left">
+            <img src={headerLogo} width={110} height={35} alt="" />
+          </div>
+          <nav
+            className={`header__nav__list ${
+              hide ? "header__nav__list-show" : ""
+            }`}
+          >
+            <ul>
+              <li>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"/"}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"about"}
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"service"}
+                >
+                  Service
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"news"}
+                >
+                  News & Events
+                </NavLink>
+              </li>
+              <li>
+                <a href="#partners">Partners</a>
+              </li>
+              <li>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"faq"}
+                >
+                  Faq
+                </NavLink>
+              </li>
+              <li>
+                <a href="#uz">UZ</a>
+              </li>
+            </ul>
+            <div className="phone">
+              <span>Call Us:</span>
+              <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
             </div>
-        </header>
-    );
+          </nav>
+          <div className="header-right">
+            <button className="contact-btn">Contact Us</button>
+          </div>
+          {!hide ? (
+            <button
+              onClick={() => setHide(true)}
+              className="header__nav__right-menu"
+            >
+              <MenuIcon />
+            </button>
+          ) : (
+            <button
+              onClick={() => setHide(false)}
+              className="header__nav__right-menu"
+            >
+              <CloseIcon />
+            </button>
+          )}
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
