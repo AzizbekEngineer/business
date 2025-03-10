@@ -63,6 +63,7 @@ const Home = () => {
           desc={
             "Axborot shakllanayotgan tez sur'atda dunyoda bizning kundalik yangiliklar xizmatimiz so'nggi o'zgarishlardan xabardor bo'lishdir"
           }
+          descWidth={"512px"}
         />
         <Concepts data={fakeData} />
         <NewsCard />

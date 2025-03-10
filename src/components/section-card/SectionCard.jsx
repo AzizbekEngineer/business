@@ -48,6 +48,14 @@ const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
             display: "flex",
             gap: "50px",
             flexDirection: "row",
+            "@media (max-width: 1050px)": {
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "20px",
+            },
+            "@media (max-width: 790px)": {
+              gridTemplateColumns: "1fr",
+            },
           }}
         >
           <Typography

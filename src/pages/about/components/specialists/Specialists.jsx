@@ -20,6 +20,9 @@ import spes5 from "../../../../assets/icons/spes5.svg";
 import spes6 from "../../../../assets/icons/spes6.svg";
 import spes7 from "../../../../assets/icons/spes7.svg";
 import spes8 from "../../../../assets/icons/spes8.svg";
+import face from "../../../../assets/icons/face.svg";
+import tel from "../../../../assets/icons/tel.svg";
+import insta from "../../../../assets/icons/in.svg";
 
 const Specialists = () => {
   const teamMembers = [
@@ -28,9 +31,9 @@ const Specialists = () => {
       role: "Product Designer",
       image: spes1,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -38,9 +41,9 @@ const Specialists = () => {
       role: "Business Analyst",
       image: spes2,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -48,9 +51,9 @@ const Specialists = () => {
       role: "Front End Developer",
       image: spes3,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -58,9 +61,9 @@ const Specialists = () => {
       role: "Back End Developer",
       image: spes4,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -68,9 +71,9 @@ const Specialists = () => {
       role: "DevOps Engineer",
       image: spes5,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -78,9 +81,9 @@ const Specialists = () => {
       role: "Cloud Expert",
       image: spes6,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -88,9 +91,9 @@ const Specialists = () => {
       role: "System Engineer",
       image: spes7,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
     {
@@ -98,9 +101,9 @@ const Specialists = () => {
       role: "UI/UX Designer",
       image: spes8,
       social: [
-        { icon: <FacebookIcon />, link: "#" },
-        { icon: <TelegramIcon />, link: "#" },
-        { icon: <InstagramIcon />, link: "#" },
+        { icon: face, link: "#" },
+        { icon: tel, link: "#" },
+        { icon: insta, link: "#" },
       ],
     },
   ];
@@ -149,7 +152,7 @@ const Specialists = () => {
               <Button
                 sx={{
                   border: "none",
-                  borderRadius: "30px",
+                  borderRadius: "10px",
                   background: "#1351D8",
                   color: "white",
                   padding: { xs: "10px 20px", md: "13px 26px" },
@@ -193,6 +196,7 @@ const Specialists = () => {
                     height: { xs: 70, md: 90 },
                     mx: "auto",
                     mb: 2,
+                    fontFamily: "Yantramanav",
                   }}
                 />
                 <Typography
@@ -240,7 +244,7 @@ const Specialists = () => {
                         "&:hover": { color: "#0056b3" },
                       }}
                     >
-                      {social.icon}
+                      <img src={social.icon} alt="" />
                     </IconButton>
                   ))}
                 </Stack>

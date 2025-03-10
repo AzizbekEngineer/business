@@ -14,13 +14,25 @@ const ServiceSection = () => {
               alignItems={"center"}
               gap={{ xs: "30px", md: "65px" }}
               py={{ xs: "60px", md: "120px" }}
-              textAlign={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "start", md: "left" }}
+              sx={{
+                "@media (max-width: 1050px)": {
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "10px",
+                },
+              }}
             >
               <img
                 src={serviceImg}
                 alt="img"
                 width={"100%"}
-                style={{ maxWidth: "500px" }}
+                style={{
+                  maxWidth: "500px",
+                  "@media (max-width: 1100px)": {
+                    width: "100%",
+                  },
+                }}
               />
               <div>
                 <Typography
@@ -60,7 +72,6 @@ const ServiceSection = () => {
                 </Typography>
                 <Stack
                   direction={{ xs: "column", sm: "row" }}
-                  alignItems={"center"}
                   gap={"30px"}
                   mt={4}
                 >

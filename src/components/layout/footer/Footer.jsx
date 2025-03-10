@@ -129,7 +129,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer__line"></div>
+        <div className="footer__line footer__line-bottom"></div>
         <div className="footer__bottom">
           <div className="footer__bottom__icons">
             <FacebookOutlinedIcon />

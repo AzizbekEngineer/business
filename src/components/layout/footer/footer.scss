@@ -3,6 +3,7 @@
     padding: 40px 0;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 
     &__back {
         position: absolute;
@@ -170,6 +171,7 @@
         padding-left: 70px;
         display: flex;
         flex-direction: column;
+        width: 100%;
         gap: 50px;
     }
 
@@ -269,10 +271,39 @@
         }
     }
 
-    @media (max-width: 438px) {
+    @media (max-width: 450px) {
         &__middle__left {
-            grid-template-columns: 1fr;
-            gap: 50px;
+            display: none;
+        }
+
+        &__middle {
+            position: relative;
+        }
+
+        &__middle__right {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            z-index: 101;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 0;
+            gap: 20px;
+        }
+
+        &__line-bottom {
+            margin-top: 120px;
+        }
+
+        &__bottom__icons {
+            margin: 0 auto;
+        }
+
+        &__bottom__desc {
+            text-align: center;
         }
     }
 
@@ -291,4 +322,6 @@
             }
         }
     }
+
+
 }

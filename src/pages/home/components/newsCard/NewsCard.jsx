@@ -14,7 +14,7 @@ const NewsCard = () => {
         padding: "20px 0",
         position: "relative",
         width: "100%",
-        maxWidth: "1200px",
+        // maxWidth: "1200px",
         margin: "0 auto",
         overflow: "hidden",
       }}
@@ -50,10 +50,16 @@ const NewsCard = () => {
           src={vrImage}
           alt="VR Laptop"
           sx={{
-            width: { xs: "100%", md: "50%" },
+            maxWidth: "640px",
             height: { xs: "250px", md: "auto" },
             objectFit: "cover",
             borderRadius: "8px",
+            "@media (max-width: 1100px)": {
+              maxWidth: "450px",
+            },
+            "@media (max-width: 900px)": {
+              maxWidth: "100%",
+            },
           }}
         />
 
@@ -62,7 +68,10 @@ const NewsCard = () => {
           sx={{
             width: { xs: "100%", md: "50%" },
             color: "#fff",
-            paddingLeft: { md: 2 },
+            paddingLeft: "50px",
+            "@media (max-width: 900px)": {
+              paddingLeft: "0px",
+            },
           }}
         >
           <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 1 }}>

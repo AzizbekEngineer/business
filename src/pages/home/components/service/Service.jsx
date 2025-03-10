@@ -8,6 +8,7 @@ import service3 from "../../../../assets/images/service3.svg";
 import service4 from "../../../../assets/images/service4.svg";
 import service5 from "../../../../assets/images/service5.svg";
 import service6 from "../../../../assets/images/service6.svg";
+import service7 from "../../../../assets/images/service7.svg";
 
 import "./service.scss";
 
@@ -15,43 +16,52 @@ const Service = () => {
   const servicesData = [
     {
       id: 1,
-      title: "Market Research",
+      title: "Mentorlik dasturi",
       image: service1,
-      description: "Stay ahead of the curve.In-depth market analysis",
+      description:
+        "Yangi va rivojlanayotgan bizneslar uchun strategik rejalashtirish, bozor tahlili va biznes-reja tuzishda mutaxassis maslahatlari.",
     },
     {
       id: 2,
-      title: "Photography",
+      title: "Huquqiy Maslahat",
       image: service2,
-      description: "Stay ahead of the curve in-depth market analysis.",
+      description:
+        "Yuridik hujjatlarni tayyorlash, shartnomalar tahlili va qonunchilik bo‘yicha professional yuridik qo‘llab-quvvatlash.",
     },
     {
       id: 3,
-      title: "Change Management",
+      title: "Moliyaviy Qo‘llab-quvvatlash",
       image: service3,
-      description: "Stay ahead of the curve in-depth market analysis.",
+      description:
+        "Investitsiya jalb qilish, moliyaviy rejalashtirish va byudjet boshqaruvi bo‘yicha xizmatlar, shu jumladan grant va subsidiyalar bo‘yicha.",
     },
     {
       id: 4,
-      title: "Branding",
+      title: "Trening va Seminarlar",
       image: service4,
-      description: "Stay ahead of the curve in-depth market analysis.",
+      description:
+        "Tadbirkorlik, marketing, menejment va innovatsiyalar sohasidagi treninglar hamda seminarlar orqali bilim va ko‘nikmalarni oshirish imkoniyati.",
     },
     {
       id: 5,
-      title: "Market Researching",
+      title: "Innovatsion loyihalarni qo’llab quvvatlash",
       image: service5,
       description:
-        "Success requires a proactive strategic approach to business development.",
-      points: ["Customized Growth", "Market Penetration"],
+        "Yangi g‘oyalar sinovdan o‘tkazish, innovatsion yechimlar ishlab chiqish va texnologik rivojlanishga yordam berish.",
     },
     {
       id: 6,
-      title: "Business Consulting",
+      title: "Raqamli marketing",
       image: service6,
       description:
-        "Success requires a proactive strategic approach to business development.",
-      points: ["Customized Growth", "Market Penetration"],
+        "Onlayn marketing strategiyalari, ijtimoiy tarmoqlar va reklama kampaniyalarini yuritish bo‘yicha xizmatlar.",
+    },
+    {
+      id: 7,
+      title: "Biznes konsalting",
+      image: service7,
+      description:
+        "Tajriba orttirgan tadbirkorlar va ekspertlar bilan individual mentorlik, biznesni rivojlantirish bo‘yicha shaxsiy maslahatlar.",
     },
   ];
   return (
@@ -66,6 +76,7 @@ const Service = () => {
             }
             titleColor={"#FFFFFF"}
             descColor={"#FFFFFFCC"}
+            descWidth={"506px"}
           />
           <button className="service__btn">
             <span>Batafsil ma'lumot</span>
@@ -77,42 +88,32 @@ const Service = () => {
             <div className="service__card__top" key={el.id}>
               <img src={el.image} alt="" />
               <h3 className="service__title">{el.title}</h3>
-              <div className="service__card__info">
-                <p className="service__card__desc">{el.description}</p>
-                <button className="service__card__btn">
-                  <NorthEastIcon />
-                </button>
-              </div>
+              <p className="service__card__desc">{el.description}</p>
+              <button className="service__card__btn">Batafsil</button>
             </div>
           ))}
         </div>
         <div className="service__cards__bottom">
-          {servicesData.slice(4, 6).map((el) => (
+          {servicesData.slice(4, 5).map((el) => (
             <div className="service__card__bottom" key={el.id}>
               <img src={el.image} alt="" />
               <div className="service__card__infos">
                 <h3 className="service__subtitle">{el.title}</h3>
                 <p className="service__card__desc">{el.description}</p>
-                <ul className="service__card__items">
-                  <li className="service__card__item">
-                    <button className="service__card__item__btn">
-                      <CheckIcon />
-                    </button>
-                    <span className="service__card__desc">{el.points[0]}</span>
-                  </li>
-                  <li className="service__card__item">
-                    <button className="service__card__item__btn">
-                      <CheckIcon />
-                    </button>
-                    <span className="service__card__desc">{el.points[1]}</span>
-                  </li>
-                </ul>
-                <button className="service__card__info__btn service__card__btn">
-                  <NorthEastIcon />
-                </button>
+                <button className="service__card__btn">Batafsil</button>
               </div>
             </div>
           ))}
+          <div className="service__cards__bottom__right">
+            {servicesData.slice(5, 7).map((el) => (
+              <div className="service__card__top" key={el.id}>
+                <img src={el.image} alt="" />
+                <h3 className="service__title">{el.title}</h3>
+                <p className="service__card__desc">{el.description}</p>
+                <button className="service__card__btn">Batafsil</button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="service__back"></div>

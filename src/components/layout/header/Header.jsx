@@ -10,10 +10,16 @@ const Header = () => {
 
   return (
     <header id="header">
+      <div
+        onClick={() => setHide(false)}
+        className={`header__overlay ${hide ? "header__overlay-see" : ""}`}
+      ></div>
       <div className="container">
         <div className="header">
           <div className="header-left">
-            <img src={headerLogo} width={110} height={35} alt="" />
+            <NavLink onClick={() => setHide(false)} to={"/"}>
+              <img src={headerLogo} width={110} height={35} alt="" />
+            </NavLink>
           </div>
           <nav
             className={`header__nav__list ${
@@ -21,22 +27,19 @@ const Header = () => {
             }`}
           >
             <ul>
-              <li>
-                <NavLink
-                  onClick={() => setHide(false)}
-                  className={"header__nav__link"}
-                  to={"/"}
-                >
-                  Home
-                </NavLink>
-              </li>
+              <button
+                onClick={() => setHide(false)}
+                className="header__nav__right-menu header__nav__right-menu-close"
+              >
+                <CloseIcon />
+              </button>
               <li>
                 <NavLink
                   onClick={() => setHide(false)}
                   className={"header__nav__link"}
                   to={"about"}
                 >
-                  About
+                  Biz haqimizda
                 </NavLink>
               </li>
               <li>
@@ -45,7 +48,7 @@ const Header = () => {
                   className={"header__nav__link"}
                   to={"service"}
                 >
-                  Service
+                  Xizmatlar va tariflar
                 </NavLink>
               </li>
               <li>
@@ -54,11 +57,17 @@ const Header = () => {
                   className={"header__nav__link"}
                   to={"news"}
                 >
-                  News & Events
+                  Yangilik va Tadbir
                 </NavLink>
               </li>
               <li>
-                <a href="#partners">Partners</a>
+                <NavLink
+                  onClick={() => setHide(false)}
+                  className={"header__nav__link"}
+                  to={"partner"}
+                >
+                  Hamkorlar
+                </NavLink>
               </li>
               <li>
                 <NavLink
@@ -66,36 +75,27 @@ const Header = () => {
                   className={"header__nav__link"}
                   to={"faq"}
                 >
-                  Faq
+                  FAQ
                 </NavLink>
               </li>
-              <li>
+              <li className="header__nav__lang">
                 <a href="#uz">UZ</a>
               </li>
             </ul>
             <div className="phone">
-              <span>Call Us:</span>
+              <span>Qo’ng’iroq qiling:</span>
               <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
             </div>
           </nav>
           <div className="header-right">
-            <button className="contact-btn">Contact Us</button>
+            <button className="contact-btn">Bog’lanish</button>
           </div>
-          {!hide ? (
-            <button
-              onClick={() => setHide(true)}
-              className="header__nav__right-menu"
-            >
-              <MenuIcon />
-            </button>
-          ) : (
-            <button
-              onClick={() => setHide(false)}
-              className="header__nav__right-menu"
-            >
-              <CloseIcon />
-            </button>
-          )}
+          <button
+            onClick={() => setHide(true)}
+            className="header__nav__right-menu"
+          >
+            <MenuIcon />
+          </button>
         </div>
       </div>
     </header>
