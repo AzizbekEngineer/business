@@ -1,21 +1,3 @@
-// import React from "react";
-// import "./newsCard.scss";
-// const NewsCard = () => {
-//   return (
-//     <div className="newsCard">
-//       <div className="container newsCard__container">
-//         <div className="newsCard__img">
-//           <img src="" alt="" />
-//         </div>
-//         <div className="newsCard__info"></div>
-//       </div>
-//       <div className="newsCard__back"></div>
-//     </div>
-//   );
-// };
-
-// export default NewsCard;
-
 import React from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
@@ -125,7 +107,7 @@ const NewsCard = () => {
           </Typography>
           <Stack
             sx={{
-              border: "1px solid #D9D9D9DD",
+              border: "0.1px solid #D9D9D9DD",
             }}
           ></Stack>
           <Typography

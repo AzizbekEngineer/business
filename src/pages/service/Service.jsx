@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../../components/hero-section/HeroSection";
 import buildingImage from "../../assets/images/serviceHero.svg";
 import SectionCard from "../../components/section-card/SectionCard";

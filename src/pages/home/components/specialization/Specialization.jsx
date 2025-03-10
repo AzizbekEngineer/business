@@ -12,7 +12,13 @@ import NorthEastIcon from "@mui/icons-material/NorthEast";
 
 const Specialization = () => {
   return (
-    <Box component={"section"} className="container">
+    <Box
+      component={"section"}
+      className="container"
+      sx={{
+        padding: "40px 0 0",
+      }}
+    >
       <Stack
         padding={"60px"}
         bgcolor={"#F3F6FD"}

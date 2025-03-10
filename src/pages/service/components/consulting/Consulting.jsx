@@ -29,8 +29,8 @@ const Consulting = () => {
       <div className="consulting-container container">
         <div className="consulting-header">
           <SectionHeader
-            subtitle={"BIZNING NARXLAR"}
-            title={"Tariflar haqida batafsil ma’lumot"}
+            subtitle={"KONSULTING MUMKINLIGI"}
+            title={"Mijozlarimiz uchun eng yaxshi yo'l."}
             desc={
               "Bizing konsulting xizmatimiz sizning IT infratizimangizni, isho‘qimlariniz va operatsiyalaringizni optimallashtirishga yordam beradi, bu esa sizning biznesingizni rivojlanishga olib keladi."
             }
