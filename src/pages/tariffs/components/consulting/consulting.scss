@@ -158,3 +158,9 @@
     color: #1c1c1cb3;
   }
 }
+
+@media (max-width:1250px) {
+  .consulting-container {
+    grid-template-columns: 1fr;
+  }
+}

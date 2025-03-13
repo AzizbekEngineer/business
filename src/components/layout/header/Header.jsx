@@ -3,7 +3,9 @@ import "./header.scss";
 import { NavLink } from "react-router";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import headerLogo from "../../../assets/icons/headerLogo.png";
+import headerLogo from "../../../assets/icons/headerLogo.svg";
+import menu from "../../../assets/icons/menu.svg";
+import menuClose from "../../../assets/icons/menu-close.svg";
 
 const Header = () => {
   const [hide, setHide] = useState(false);
@@ -31,7 +33,7 @@ const Header = () => {
                 onClick={() => setHide(false)}
                 className="header__nav__right-menu header__nav__right-menu-close"
               >
-                <CloseIcon />
+                <img src={menuClose} alt="" />
               </button>
               <li>
                 <NavLink
@@ -46,7 +48,7 @@ const Header = () => {
                 <NavLink
                   onClick={() => setHide(false)}
                   className={"header__nav__link"}
-                  to={"service"}
+                  to={"tariffs"}
                 >
                   Xizmatlar va tariflar
                 </NavLink>
@@ -87,15 +89,17 @@ const Header = () => {
               <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
             </div>
           </nav>
-          <div className="header-right">
-            <button className="contact-btn">Bog’lanish</button>
+          <div className="header__menu__right-btn">
+            <div className="header-right">
+              <button className="contact-btn">Bog’lanish</button>
+            </div>
+            <button
+              onClick={() => setHide(true)}
+              className="header__nav__right-menu"
+            >
+              <img src={menu} alt="" />
+            </button>
           </div>
-          <button
-            onClick={() => setHide(true)}
-            className="header__nav__right-menu"
-          >
-            <MenuIcon />
-          </button>
         </div>
       </div>
     </header>

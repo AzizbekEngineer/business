@@ -64,7 +64,8 @@ const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
               color: "#1C1C1CE6",
               fontSize: "15px",
               fontWeight: "500",
-              display: "flex",
+              display: "grid",
+              gridTemplateColumns: "15px 1fr",
               alignItems: "center",
               gap: "10px",
             }}

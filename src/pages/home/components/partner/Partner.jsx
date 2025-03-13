@@ -1,5 +1,7 @@
 import React from "react";
 import partner1 from "../../../../assets/icons/partner1.svg";
+import partner2 from "../../../../assets/icons/partner2.svg";
+import partner3 from "../../../../assets/icons/partner3.png";
 import "./partner.scss";
 
 const Partner = () => {
@@ -15,10 +17,10 @@ const Partner = () => {
             <img src={partner1} alt="" />
           </div>
           <div className="partner__img">
-            <img src={partner1} alt="" />
+            <img src={partner2} alt="" />
           </div>
           <div className="partner__img">
-            <img src={partner1} alt="" />
+            <img src={partner3} alt="" />
           </div>
         </div>
       </div>

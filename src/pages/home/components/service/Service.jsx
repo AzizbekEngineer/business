@@ -1,119 +1,58 @@
 import React from "react";
 import SectionHeader from "../../../../components/section-header/SectionHeader";
-import CheckIcon from "@mui/icons-material/Check";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
-import service1 from "../../../../assets/images/service1.svg";
-import service2 from "../../../../assets/images/service2.svg";
-import service3 from "../../../../assets/images/service3.svg";
-import service4 from "../../../../assets/images/service4.svg";
-import service5 from "../../../../assets/images/service5.svg";
-import service6 from "../../../../assets/images/service6.svg";
-import service7 from "../../../../assets/images/service7.svg";
-
 import "./service.scss";
 
-const Service = () => {
-  const servicesData = [
-    {
-      id: 1,
-      title: "Mentorlik dasturi",
-      image: service1,
-      description:
-        "Yangi va rivojlanayotgan bizneslar uchun strategik rejalashtirish, bozor tahlili va biznes-reja tuzishda mutaxassis maslahatlari.",
-    },
-    {
-      id: 2,
-      title: "Huquqiy Maslahat",
-      image: service2,
-      description:
-        "Yuridik hujjatlarni tayyorlash, shartnomalar tahlili va qonunchilik bo‘yicha professional yuridik qo‘llab-quvvatlash.",
-    },
-    {
-      id: 3,
-      title: "Moliyaviy Qo‘llab-quvvatlash",
-      image: service3,
-      description:
-        "Investitsiya jalb qilish, moliyaviy rejalashtirish va byudjet boshqaruvi bo‘yicha xizmatlar, shu jumladan grant va subsidiyalar bo‘yicha.",
-    },
-    {
-      id: 4,
-      title: "Trening va Seminarlar",
-      image: service4,
-      description:
-        "Tadbirkorlik, marketing, menejment va innovatsiyalar sohasidagi treninglar hamda seminarlar orqali bilim va ko‘nikmalarni oshirish imkoniyati.",
-    },
-    {
-      id: 5,
-      title: "Innovatsion loyihalarni qo’llab quvvatlash",
-      image: service5,
-      description:
-        "Yangi g‘oyalar sinovdan o‘tkazish, innovatsion yechimlar ishlab chiqish va texnologik rivojlanishga yordam berish.",
-    },
-    {
-      id: 6,
-      title: "Raqamli marketing",
-      image: service6,
-      description:
-        "Onlayn marketing strategiyalari, ijtimoiy tarmoqlar va reklama kampaniyalarini yuritish bo‘yicha xizmatlar.",
-    },
-    {
-      id: 7,
-      title: "Biznes konsalting",
-      image: service7,
-      description:
-        "Tajriba orttirgan tadbirkorlar va ekspertlar bilan individual mentorlik, biznesni rivojlantirish bo‘yicha shaxsiy maslahatlar.",
-    },
+const Service = ({
+  bgColor,
+  textColor,
+  btnBack,
+  btnColor,
+  subtitle,
+  title,
+  btnTitle,
+}) => {
+  const packages = [
+    { name: "Silver package", price: "3$", color: "#007bff" },
+    { name: "Gold package", price: "10$", color: "#007bff" },
+    { name: "Platinum package", price: "25$", color: "#007bff" },
   ];
   return (
-    <div className="service">
+    <div className="service" style={{ background: bgColor }}>
       <div className="container">
         <div className="service__top">
           <SectionHeader
-            subtitle={"BIZNING XIZMATLAR"}
-            title={"Biz eng yaxshi xizmatlarni taqdim etamiz"}
-            desc={
-              "Bizning konsalting jarayonimiz sizning joriy infratuzilmangizni, ish oqimlaringizni va og'riqli nuqtalaringizni to'liq baholash bilan boshlanadi."
-            }
-            titleColor={"#FFFFFF"}
+            subtitle={subtitle}
+            title={title}
+            titleColor={textColor}
             descColor={"#FFFFFFCC"}
-            descWidth={"506px"}
+            titlePadding={"22px"}
+            titleAlign={"center"}
+            textStart={"start"}
           />
-          <button className="service__btn">
-            <span>Batafsil ma'lumot</span>
+          <button
+            className="service__btn"
+            style={{ background: btnBack, color: btnColor }}
+          >
+            <span>{btnTitle}</span>
             <NorthEastIcon />
           </button>
         </div>
-        <div className="service__cards__top">
-          {servicesData.slice(0, 4).map((el) => (
-            <div className="service__card__top" key={el.id}>
-              <img src={el.image} alt="" />
-              <h3 className="service__title">{el.title}</h3>
-              <p className="service__card__desc">{el.description}</p>
-              <button className="service__card__btn">Batafsil</button>
+        <div className="comments__cards">
+          {packages.map((pkg, index) => (
+            <div key={index} className="comments__card">
+              <h2 style={{ color: pkg.color }}>
+                {pkg.price} <span>/year</span>
+              </h2>
+              <p>{pkg.name}</p>
+              <p>Billed annually</p>
+              <ul>
+                <li>Customized training play for employer</li>
+                <li>Free account on platform</li>
+              </ul>
+              <button>Get started</button>
             </div>
           ))}
-        </div>
-        <div className="service__cards__bottom">
-          {servicesData.slice(4, 5).map((el) => (
-            <div className="service__card__bottom" key={el.id}>
-              <img src={el.image} alt="" />
-              <div className="service__card__infos">
-                <h3 className="service__subtitle">{el.title}</h3>
-                <p className="service__card__desc">{el.description}</p>
-                <button className="service__card__btn">Batafsil</button>
-              </div>
-            </div>
-          ))}
-          <div className="service__cards__bottom__right">
-            {servicesData.slice(5, 7).map((el) => (
-              <div className="service__card__top" key={el.id}>
-                <img src={el.image} alt="" />
-                <h3 className="service__title">{el.title}</h3>
-                <p className="service__card__desc">{el.description}</p>
-                <button className="service__card__btn">Batafsil</button>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
       <div className="service__back"></div>

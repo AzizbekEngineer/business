@@ -8,10 +8,10 @@ import img2 from "../../assets/images/concepts2.png";
 import img3 from "../../assets/images/concepts3.png";
 import { Box, Stack } from "@mui/material";
 import Partner from "./components/partner/Partner";
-import Service from "./components/service/Service";
 import Opportunities from "./components/opportunities/Opportunities";
 import NewsCard from "./components/newsCard/NewsCard";
 import Group from "./components/group/Group";
+import Service from "./components/service/Service";
 
 const fakeData = [
   {
@@ -54,7 +54,15 @@ const Home = () => {
       <Hero />
       <Specialization />
       <Partner />
-      <Service />
+      <Service
+        bgColor={"#1C1C1C"}
+        textColor={"#FFFFFF"}
+        btnColor={"#FFFFFF"}
+        btnBack={"#1351D8"}
+        subtitle={"BIZNING NARXLAR"}
+        title={"Tariflar haqida batafsil ma’lumot"}
+        btnTitle={"Tarish tanlashga yordam"}
+      />
       <Opportunities />
       <Stack gap={"50px"} className="container">
         <SectionHeader

@@ -3,24 +3,24 @@ import { Route, Routes } from "react-router";
 import Home from "./pages/home/Home";
 import Layout from "./components/layout/Layout";
 import About from "./pages/about/About";
-import Service from "./pages/service/Service";
 import Faq from "./pages/faq/Faq";
 import News from "./pages/news/News";
+import Tariffs from "./pages/tariffs/Tariffs";
 
 const App = () => {
-    return (
-        <Fragment>
-            <Layout>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="service" element={<Service />} />
-                    <Route path="news" element={<News />} />
-                    <Route path="faq" element={<Faq />} />
-                </Routes>
-            </Layout>
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="tariffs" element={<Tariffs />} />
+          <Route path="news" element={<News />} />
+          <Route path="faq" element={<Faq />} />
+        </Routes>
+      </Layout>
+    </Fragment>
+  );
 };
 
 export default App;
