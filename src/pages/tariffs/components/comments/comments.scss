@@ -14,16 +14,7 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 450px) {
-    &__list {
-      flex-direction: column;
-      gap: 10px;
-    }
 
-    &__item {
-      width: 100%;
-    }
-  }
 
   &__item {
     font-family: "Yantramanav";
@@ -50,11 +41,7 @@
     flex-wrap: wrap;
   }
 
-  @media (max-width: 730px) {
-    &__cards {
-      padding: 40px 10px;
-    }
-  }
+
 
   &__card {
     width: 294px;
@@ -129,6 +116,33 @@
       &:hover {
         background-color: #1351d8;
       }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    &__card {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 730px) {
+    &__cards {
+      padding: 40px 0;
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    &__list {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__item {
+      width: 100%;
     }
   }
 }

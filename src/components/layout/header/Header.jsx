@@ -66,7 +66,7 @@ const Header = () => {
                 <NavLink
                   onClick={() => setHide(false)}
                   className={"header__nav__link"}
-                  to={"partner"}
+                  to={"partners"}
                 >
                   Hamkorlar
                 </NavLink>

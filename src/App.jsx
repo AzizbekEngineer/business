@@ -6,6 +6,8 @@ import About from "./pages/about/About";
 import Faq from "./pages/faq/Faq";
 import News from "./pages/news/News";
 import Tariffs from "./pages/tariffs/Tariffs";
+import Inner from "./pages/inner/Inner";
+import Partners from "./pages/partners/Partners";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
           <Route path="tariffs" element={<Tariffs />} />
           <Route path="news" element={<News />} />
           <Route path="faq" element={<Faq />} />
+          <Route path="inner" element={<Inner />} />
+          <Route path="partners" element={<Partners />} />
         </Routes>
       </Layout>
     </Fragment>
