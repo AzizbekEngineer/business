@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Cards from "./components/cards/Cards";
-import Popular from "./components/popular/Popular";
+import Popular from "../../components/popular/Popular";
 import Specialists from "./components/specialists/Specialists";
 import ServiceSection from "../../components/service-section/ServiceSection";
 import HelpSection from "../../components/help-section/HelpSection";
@@ -8,6 +8,7 @@ import { Box, Typography } from "@mui/material";
 import Contact from "../../components/contact/Contact";
 import HeroSection from "../../components/hero-section/HeroSection";
 import Partner from "../home/components/partner/Partner";
+import buildingImage from "../../assets/images/popular.svg";
 
 const About = () => {
   useEffect(() => {
@@ -41,7 +42,19 @@ const About = () => {
       </Box>
       <Cards />
       <Partner />
-      <Popular />
+      <Popular
+        buildingImage={buildingImage}
+        subtitle={"KOMPANIYAMIZ"}
+        title={"Nima uchun kompaniyamiz juda mashhur?"}
+        headerDesc={"Sayohatingizni boshlash uchun bugun biz bilan bog'laning!"}
+        desc={
+          "Bizning jamoamiz turli sohalardagi eng yaxshi iste'dodlar, professionallar, ekspertlar va vizyonerlardan iborat jamoaviy kuchdir. Mukammallikka intilish bilan bizning mutaxassislarimiz har bir loyihaga boy tajriba va bilim olib keladi. Slack-da biz mukammallikni ta'minlashga sodiqmiz. Kontseptsiyadan boshlab amalga oshirishgacha biz murosaga o'rin qoldirmasdan, sifat va mahoratning eng yuqori standartlarini saqlab qolamiz."
+        }
+        info1={"Boshqariladigan xizmatlar va mahsulotlar"}
+        info2={"Moslashuvchanlik va moslashuvchanlik"}
+        info3={"Raqobat ustunligi"}
+        btnTitle={"Biz bilan bog’lanish"}
+      />
       <Specialists />
       <ServiceSection />
       <Box

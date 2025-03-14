@@ -1,10 +1,20 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
-import SectionHeader from "../../../../components/section-header/SectionHeader";
-import buildingImage from "../../../../assets/images/popular.svg";
-import SectionCard from "../../../../components/section-card/SectionCard";
+import SectionHeader from "../section-header/SectionHeader";
+import SectionCard from "../section-card/SectionCard";
 
-const Popular = () => {
+const Popular = ({
+  subtitle,
+  title,
+  headerDesc,
+  desc,
+  info1,
+  info2,
+  info3,
+  buildingImage,
+  btnTitle,
+  titleWidth,
+}) => {
   return (
     <Box component={"section"} className="container">
       <Stack
@@ -24,18 +34,19 @@ const Popular = () => {
           }}
         >
           <SectionHeader
-            subtitle={"KOMPANIYAMIZ"}
+            subtitle={subtitle}
             title={
               <Typography
                 sx={{
-                  fontSize: { xs: "24px", sm: "28px", md: "32px" },
+                  fontSize: { xs: "24px", sm: "28px", md: "45px" },
                   fontWeight: "bold",
+                  maxWidth: `${titleWidth ? titleWidth : "100%"}`,
                 }}
               >
-                Nima uchun kompaniyamiz juda mashhur?
+                {title}
               </Typography>
             }
-            desc={"Sayohatingizni boshlash uchun bugun biz bilan bog'laning!"}
+            desc={headerDesc}
           />
           <Stack sx={{ textAlign: { xs: "center", sm: "left" } }}>
             <Button
@@ -49,17 +60,15 @@ const Popular = () => {
                 width: { xs: "100%", sm: "auto" },
               }}
             >
-              Biz bilan bog’lanish
+              {btnTitle}
             </Button>
           </Stack>
         </Box>
         <SectionCard
-          desc={
-            "Bizning jamoamiz turli sohalardagi eng yaxshi iste'dodlar, professionallar, ekspertlar va vizyonerlardan iborat jamoaviy kuchdir. Mukammallikka intilish bilan bizning mutaxassislarimiz har bir loyihaga boy tajriba va bilim olib keladi. Slack-da biz mukammallikni ta'minlashga sodiqmiz. Kontseptsiyadan boshlab amalga oshirishgacha biz murosaga o'rin qoldirmasdan, sifat va mahoratning eng yuqori standartlarini saqlab qolamiz."
-          }
-          info1={"Boshqariladigan xizmatlar va mahsulotlar"}
-          info2={"Moslashuvchanlik va moslashuvchanlik"}
-          info3={"Raqobat ustunligi"}
+          desc={desc}
+          info1={info1}
+          info2={info2}
+          info3={info3}
           buildingImage={buildingImage}
         />
       </Stack>

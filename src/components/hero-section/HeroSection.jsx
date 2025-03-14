@@ -1,7 +1,15 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
 
-const HeroSection = ({ subtitle, title, desc, titleColor, descColor }) => {
+const HeroSection = ({
+  subtitle,
+  title,
+  desc,
+  titleColor,
+  descColor,
+  titleMaxWidth,
+  descMaxWidth,
+}) => {
   return (
     <Stack alignItems={"center"} textAlign={"center"}>
       <Typography
@@ -25,6 +33,7 @@ const HeroSection = ({ subtitle, title, desc, titleColor, descColor }) => {
           fontWeight: 500,
           fontSize: "75px",
           lineHeight: "66px",
+          maxWidth: `${titleMaxWidth ? titleMaxWidth : "100%"}`,
           color: `${titleColor ? titleColor : "#212529"}`,
           mt: "25px",
           mb: "20px",
@@ -45,6 +54,7 @@ const HeroSection = ({ subtitle, title, desc, titleColor, descColor }) => {
           fontWeight: 500,
           fontSize: "18px",
           lineHeight: "22px",
+          maxWidth: `${descMaxWidth ? descMaxWidth : "100%"}`,
           color: `${descColor ? descColor : "#1C1C1CB2"}`,
           "@media (max-width: 500px)": {
             fontSize: "16px",
