@@ -15,8 +15,8 @@ const HeroSection = ({
       <Typography
         sx={{
           fontWeight: 500,
-          fontSize: "12px",
-          lineHeight: "14.4px",
+          fontSize: "14px",
+          lineHeight: "10px",
           letterSpacing: "35%",
           color: "#1351D8",
           letterSpacing: "1px",

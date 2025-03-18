@@ -38,6 +38,8 @@ const About = () => {
           desc={
             "Innovatsiyalarning o'zgaruvchan kuchini va dinamika bilan uzluksiz yechimlarni his eting. Bizning sayohatimiz yechimni yetkazib berish bilan tugamaydi."
           }
+          titleMaxWidth={"1185px"}
+          descMaxWidth={"685px"}
         />
       </Box>
       <Cards />

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer__top">
           <div className="footer__top__left">
             <div className="footer__logo">
-              <img width={160} height={45} src={footerLogo} alt="" />
+              <img width={160} src={footerLogo} alt="" />
             </div>
             <p className="footer__desc">
               Biz sizning biznesingizni oldinga siljitish uchun tajriba va

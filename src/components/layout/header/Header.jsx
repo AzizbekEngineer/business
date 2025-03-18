@@ -21,11 +21,7 @@ const Header = () => {
         <div className="header">
           <div className="header-left">
             <NavLink onClick={() => setHide(false)} to={"/"}>
-              <img
-                src={headerLogo}
-                style={{ width: "160px", height: "45px" }}
-                alt=""
-              />
+              <img src={headerLogo} style={{ width: "160px" }} alt="" />
             </NavLink>
           </div>
           <nav

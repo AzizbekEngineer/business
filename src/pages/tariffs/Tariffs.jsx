@@ -37,9 +37,15 @@ const Tariffs = () => {
           desc={
             "Joylinks kompaniyasida biz har qanday ehtiyojingizni qondirish uchun ajoyib yechimlar va doimiy yordam taqdim etishga sodiqmiz."
           }
+          titleMaxWidth={"800px"}
+          descMaxWidth={"685px"}
         />
       </Box>
-      <Box component={"section"} className="container">
+      <Box
+        component={"section"}
+        className="container"
+        sx={{ margin: "100px auto" }}
+      >
         <Stack
           sx={{
             padding: { xs: "20px", sm: "40px" },

@@ -154,9 +154,11 @@ const Specialists = () => {
                   border: "none",
                   borderRadius: "10px",
                   background: "#1351D8",
+                  fontWeight: "500",
                   color: "white",
-                  padding: { xs: "10px 20px", md: "13px 26px" },
-                  fontSize: { xs: "12px", md: "13px" },
+                  padding: "10px 10px",
+                  fontSize: "13px",
+                  maxWidth: "210px",
                 }}
               >
                 Uchrashuvga yozilish
