@@ -8,6 +8,8 @@ import buildingImage from "../../assets/images/partnerBg.svg";
 import buildingImage2 from "../../assets/images/partnerBg2.svg";
 
 import React from "react";
+import PartnerImages from "./components/partnerImages/PartnerImages";
+import PartnerCard from "./components/Partnercard";
 
 const Partners = () => {
   return (
@@ -37,7 +39,7 @@ const Partners = () => {
           descMaxWidth={"685px"}
         />
       </Box>
-      <h2 style={{ textAlign: "center" }}>Partner imgs</h2>
+      <PartnerImages />
       <Popular
         buildingImage={buildingImage}
         subtitle={"HAMKORIMIZ"}
@@ -51,14 +53,14 @@ const Partners = () => {
         info2={"Investitsiya – kelajak poydevori!"}
         info3={"Barqaror rivojlanish yo‘lida!"}
       />
-      <h2 style={{ textAlign: "center" }}>Xamkorlarimiz</h2>
+      <PartnerCard />
       <Popular
         buildingImage={buildingImage2}
         subtitle={"HAMKORIMIZ"}
         title={
-          "O’zbekiston respublikasi bandlik vamehnat munosabatlari vazirligi"
+          "O’zbekiston respublikasi bandlik va mehnat munosabatlari vazirligi"
         }
-        titleWidth={"690px"}
+        titleWidth={"698px"}
         btnTitle={"Biz bilan bog’lanish"}
         desc={
           "Bizning hamkorligimiz barqaror bandlik va adolatli mehnat munosabatlarini rivojlantirishga qaratilgan. Bandlik va Mehnat Munosabatlari Vazirligi bilan hamkorlikda biz ishchi kuchi salohiyatini oshirish, yangi ish o‘rinlarini yaratish va innovatsion yechimlar orqali iqtisodiy rivojlanishga hissa qo‘shishga intilamiz. Tajriba va bilim almashinuvi orqali biz mehnat bozori ehtiyojlariga mos keluvchi, samarali va inklyuziv ish muhitini shakllantirishga sodiqmiz."

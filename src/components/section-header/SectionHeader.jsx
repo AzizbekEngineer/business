@@ -9,6 +9,7 @@ const SectionHeader = ({
   titleAlign,
   descColor,
   descWidth,
+  titleWidth,
   titlePadding,
   textStart,
 }) => {
@@ -44,6 +45,7 @@ const SectionHeader = ({
           letterSpacing: "0px",
           color: `${titleColor ? titleColor : "#212529"}`,
           mt: "14px",
+          maxWidth: `${titleWidth ? titleWidth : "100%"}`,
           mb: "16px",
           textAlign: `${titleAlign ? titleAlign : "start"}`,
           "@media (max-width: 650px)": {

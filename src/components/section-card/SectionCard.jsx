@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import galochka from "../../assets/icons/galochka.svg";
 import React from "react";
 
 const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
@@ -70,22 +71,7 @@ const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
               gap: "10px",
             }}
           >
-            <span
-              style={{
-                marginRight: 8,
-                color: "white",
-                width: "15px",
-                height: "15px",
-                background: "#1351D8",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "50%",
-                fontSize: "12px",
-              }}
-            >
-              ✔
-            </span>
+            <img src={galochka} alt="" />
             {info1 && info1}
           </Typography>
           <Typography
@@ -98,22 +84,7 @@ const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
               gap: "10px",
             }}
           >
-            <span
-              style={{
-                marginRight: 8,
-                color: "white",
-                width: "15px",
-                height: "15px",
-                background: "#1351D8",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "50%",
-                fontSize: "12px",
-              }}
-            >
-              ✔
-            </span>
+            <img src={galochka} alt="" />
             {info2 && info2}
           </Typography>
           <Typography
@@ -126,22 +97,7 @@ const SectionCard = ({ info1, info2, info3, desc, buildingImage }) => {
               gap: "10px",
             }}
           >
-            <span
-              style={{
-                marginRight: 8,
-                color: "white",
-                width: "15px",
-                height: "15px",
-                background: "#1351D8",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "50%",
-                fontSize: "12px",
-              }}
-            >
-              ✔
-            </span>
+            <img src={galochka} alt="" />
             {info3 && info3}
           </Typography>
         </Stack>
