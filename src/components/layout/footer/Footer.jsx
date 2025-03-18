@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../../../assets/icons/footerLogo.svg";
+import footerLogo from "../../../assets/icons/footerLogo.png";
 import youtube from "../../../assets/icons/youtube.svg";
 import work from "../../../assets/icons/work.svg";
 import shop from "../../../assets/icons/shop.svg";
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer__top">
           <div className="footer__top__left">
             <div className="footer__logo">
-              <img src={footerLogo} alt="" />
+              <img width={160} height={45} src={footerLogo} alt="" />
             </div>
             <p className="footer__desc">
               Biz sizning biznesingizni oldinga siljitish uchun tajriba va
@@ -109,10 +109,10 @@ const Footer = () => {
               <h3>Telefon raqam</h3>
               <ul>
                 <li>
-                  <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
+                  <a href="tel:+998 937220724">+998 937220724</a>
                 </li>
                 <li>
-                  <a href="tel:+998 33 752 20 22">+998 33 752 20 22</a>
+                  <a href="tel:+998 995992220">+998 995992220</a>
                 </li>
               </ul>
             </div>
@@ -120,10 +120,14 @@ const Footer = () => {
               <h3>Pochta manzili</h3>
               <ul>
                 <li>
-                  <a href="email:outlook@mail.com">outlook@mail.com</a>
+                  <a href="email:faxriyor2410@gmail.com">
+                    faxriyor2410@gmail.com
+                  </a>
                 </li>
                 <li>
-                  <a href="email:joylinks@mail.com">joylinks@mail.com</a>
+                  <a href="email:shodiyorxonabdivoyitov@gmail.com">
+                    shodiyorxonabdivoyitov@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -138,7 +142,7 @@ const Footer = () => {
             <InstagramIcon />
           </div>
           <p className="footer__bottom__desc">
-            © 2023 Barcha huquqlar Joylinks tomonidan himoyalangan
+            improve tomonidan himoyalangan, 2025 bo'lsin
           </p>
         </div>
       </div>
