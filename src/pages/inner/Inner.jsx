@@ -7,6 +7,8 @@ import btn from "../../assets/icons/btn.svg";
 import Code from "../../components/code/Code";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
+import HelpSection from "../../components/help-section/HelpSection";
+import Contact from "../../components/contact/Contact";
 
 const Inner = () => {
   return (
@@ -158,6 +160,20 @@ const Inner = () => {
             </div>
           </Box>
         </Stack>
+      </Box>
+      <Box
+        component={"section"}
+        className="container"
+        sx={{ margin: "100px auto" }}
+      >
+        <HelpSection />
+      </Box>
+      <Box
+        component={"section"}
+        className="container"
+        // sx={{ marginTop: "100px" }}
+      >
+        <Contact />
       </Box>
     </Box>
   );
