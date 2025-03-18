@@ -1,9 +1,9 @@
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import newImg from "../../../assets/images/newsimg.png";
-import icon1 from '../../../assets/icons/new-card-icon.svg'
-import icon2 from '../../../assets/icons/new-card-icon2.svg'
-import icon3 from '../../../assets/icons/new-card-icon3.svg'
-import icon4 from '../../../assets/icons/new-card-icon4.svg'
+import icon1 from "../../../assets/icons/new-card-icon.svg";
+import icon2 from "../../../assets/icons/new-card-icon2.svg";
+import icon3 from "../../../assets/icons/new-card-icon3.svg";
+import icon4 from "../../../assets/icons/new-card-icon4.svg";
 
 const NewsCard = () => {
     return (
@@ -20,7 +20,7 @@ const NewsCard = () => {
                         fontWeight: "600",
                         fontSize: "10px",
                         color: "#1351D8",
-                        mt:'50px'
+                        mt: "50px",
                     }}
                 >
                     Aprerl 17
@@ -48,9 +48,9 @@ const NewsCard = () => {
                     at point of sale.
                 </Typography>
                 <Divider sx={{ bgcolor: "#D9D9D9DD", m: "35px 0 40px" }} />
-                <Grid container spacing={'23px'}>
+                <Grid container spacing={"23px"}>
                     <Grid item xs={6} md={6}>
-                        {/* <img src={icon1} alt="icon" /> */}
+                        <img src={icon1} alt="icon" width={18} height={18} />
                         <Typography
                             sx={{
                                 fontFamily: "13px",
@@ -63,7 +63,6 @@ const NewsCard = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={6} md={6}>
-
                         <Typography
                             sx={{
                                 fontFamily: "13px",
