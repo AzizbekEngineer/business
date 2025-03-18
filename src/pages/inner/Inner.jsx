@@ -1,7 +1,11 @@
 import React from "react";
 
 const Inner = () => {
-  return <div>Inner</div>;
+  return (
+    <div>
+      <h1>inner</h1>
+    </div>
+  );
 };
 
 export default Inner;
