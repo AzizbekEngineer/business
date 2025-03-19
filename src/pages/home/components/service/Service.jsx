@@ -47,8 +47,10 @@ const Service = ({
               <h2 style={{ color: pkg.color }}>
                 {pkg.price} <span>/year</span>
               </h2>
-              <p>{pkg.name}</p>
-              <p>Billed annually</p>
+              <p className="comments__name">
+                {pkg.name} <span>package</span>
+              </p>
+              <p className="comments__user">Billed annually</p>
               <ul>
                 <li>Customized training play for employer</li>
                 <li>Free account on platform</li>
