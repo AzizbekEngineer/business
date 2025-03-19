@@ -20,7 +20,7 @@ const SectionHeader = ({
           fontWeight: 500,
           fontSize: "12px",
           lineHeight: "14.4px",
-          letterSpacing: "3px",
+          letterSpacing: "5.6px",
           color: "#1351D8",
           paddingBottom: `${titlePadding ? titlePadding : "0px"}`,
           textAlign: `${titleAlign ? titleAlign : "start"}`,
@@ -39,11 +39,11 @@ const SectionHeader = ({
       <Typography
         sx={{
           fontFamily: "Yantramanav",
-          fontWeight: 500,
+          fontWeight: 700,
           fontSize: "45px",
           lineHeight: "42px",
           letterSpacing: "0px",
-          color: `${titleColor ? titleColor : "#212529"}`,
+          color: `${titleColor ? titleColor : "#000000"}`,
           mt: "14px",
           maxWidth: `${titleWidth ? titleWidth : "100%"}`,
           mb: "16px",

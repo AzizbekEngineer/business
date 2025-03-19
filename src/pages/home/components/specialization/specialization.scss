@@ -73,17 +73,17 @@
         background: #F3F6FD;
         padding: 12px;
         border-radius: 10px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 40px 1fr;
         align-items: center;
-        justify-content: flex-start;
         gap: 11px;
 
         span {
+            font-family: "Yantramanav";
             font-weight: 500;
             font-size: 18px;
             line-height: 20px;
             letter-spacing: -1%;
-            color: #000000;
         }
 
         &__icon {

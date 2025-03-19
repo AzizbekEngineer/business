@@ -40,6 +40,8 @@ const Opportunities = () => {
             title={
               "Biz sizga taqdim etishimiz mumkun bo'lgan asosiy imkoniyatlar"
             }
+            titleColor={"#212529"}
+            // titleWidth={"655px"}
           />
           <hr className="opportunities__line" />
           <div className="opportunities__cards">

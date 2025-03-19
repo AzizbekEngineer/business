@@ -1,7 +1,7 @@
 .group {
     &__top {
         display: grid;
-        grid-template-columns: 1fr 470px;
+        grid-template-columns: 675px 1fr;
         align-items: center;
         gap: 50px;
     }
@@ -24,6 +24,14 @@
             object-fit: cover;
             height: 100%;
         }
+    }
+
+    &__top__desc {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        color: #1C1C1CCC;
     }
 
     &__cards {

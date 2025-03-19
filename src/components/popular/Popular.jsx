@@ -28,7 +28,7 @@ const Popular = ({
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: { xs: "1fr", sm: "1fr 210px" },
+            gridTemplateColumns: { xs: "1fr", sm: "1fr 200px" },
             gap: "30px",
             alignItems: "center",
           }}
@@ -55,7 +55,7 @@ const Popular = ({
                 borderRadius: "30px",
                 background: "#1351D8",
                 color: "white",
-                padding: "13px 26px",
+                padding: "13px 13px",
                 fontSize: "13px",
                 width: { xs: "100%", sm: "auto" },
               }}

@@ -13,9 +13,9 @@ const Service = ({
   btnTitle,
 }) => {
   const packages = [
-    { name: "Silver package", price: "3$", color: "#007bff" },
-    { name: "Gold package", price: "10$", color: "#007bff" },
-    { name: "Platinum package", price: "25$", color: "#007bff" },
+    { name: "Silver ", price: "3$", color: "#007bff" },
+    { name: "Gold ", price: "10$", color: "#007bff" },
+    { name: "Platinum ", price: "25$", color: "#007bff" },
   ];
   return (
     <div className="service" style={{ background: bgColor }}>
@@ -44,8 +44,10 @@ const Service = ({
               <h2 style={{ color: pkg.color }}>
                 {pkg.price} <span>/year</span>
               </h2>
-              <p>{pkg.name}</p>
-              <p>Billed annually</p>
+              <p className="comments__name">
+                {pkg.name} <span>package</span>
+              </p>
+              <p className="comments__user">Billed annually</p>
               <ul>
                 <li>Customized training play for employer</li>
                 <li>Free account on platform</li>

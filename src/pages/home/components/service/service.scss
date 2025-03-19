@@ -22,6 +22,10 @@
         justify-content: space-between;
         color: white;
         transition: .4s;
+
+        svg {
+            font-size: 14px;
+        }
     }
 
     @media (max-width:450px) {

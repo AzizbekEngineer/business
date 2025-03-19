@@ -40,37 +40,19 @@ const Specialization = () => {
               <div className="specialization__icon">
                 <img src={strategy} alt="" />
               </div>
-              <span>Business strategy</span>
-            </div>
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={agensy} alt="" />
-              </div>
-              <span>Marketing agensy</span>
+              <span>Startaplar uchun dasturlar</span>
             </div>
             <div className="specialization__card">
               <div className="specialization__icon">
                 <img src={optimization} alt="" />
               </div>
-              <span>Process Optimization</span>
-            </div>
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={analysis} alt="" />
-              </div>
-              <span>Marketing Analysis</span>
+              <span>Huquqiy va moliyaviy maslahatlar</span>
             </div>
             <div className="specialization__card">
               <div className="specialization__icon">
                 <img src={optimization} alt="" />
               </div>
-              <span>Process Optimization</span>
-            </div>
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={analysis} alt="" />
-              </div>
-              <span>Marketing Analysis</span>
+              <span>Moliyalashtirish imkoniyatlari</span>
             </div>
           </div>
           <div className="specialization__box">
@@ -80,9 +62,9 @@ const Specialization = () => {
             <Code>
               <div className="specialization__info">
                 <div className="specialization__info__icon">
-                  <img src={analysis} alt="" />
+                  <img src={strategy} alt="" />
                 </div>
-                <span>Marketing Analysis</span>
+                <span>Muvaffaqiyat uchun biznes strategiyangizni oshirish</span>
               </div>
               <p className="specialization__desc">
                 Doimiy rivojlanib borayotgan biznes landshaftida mustahkam va
@@ -90,6 +72,7 @@ const Specialization = () => {
                 ko'rsatuvchi vositadir. Strategic Business Solutions
                 kompaniyasida biz oddiy rejalardan tashqari biznes
                 strategiyalarini ishlab chiqishga ixtisoslashganmiz.
+                <br />
                 <br />
                 Ular o'sish, innovatsiyalar, yechimlar va bu farovonlik uchun
                 mustahkam rejalardir.

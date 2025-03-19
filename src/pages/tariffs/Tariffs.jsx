@@ -39,6 +39,7 @@ const Tariffs = () => {
           }
           titleMaxWidth={"800px"}
           descMaxWidth={"685px"}
+          descColor={"#1C1C1CCC"}
         />
       </Box>
       <Box

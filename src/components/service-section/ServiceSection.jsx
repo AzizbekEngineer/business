@@ -49,8 +49,9 @@ const ServiceSection = () => {
                 <Typography
                   sx={{
                     fontSize: { xs: "12px", md: "15px" },
-                    lineHeight: { xs: "16px", md: "18px" },
+                    lineHeight: "22px",
                     color: "#FFFFFFCC",
+                    fontWeight: "400",
                     mt: "20px",
                   }}
                 >
@@ -61,8 +62,9 @@ const ServiceSection = () => {
                 <Typography
                   sx={{
                     fontSize: { xs: "12px", md: "15px" },
-                    lineHeight: { xs: "16px", md: "18px" },
+                    lineHeight: "22px",
                     color: "#FFFFFFCC",
+                    fontWeight: "400",
                     mt: "15px",
                   }}
                 >
@@ -73,15 +75,20 @@ const ServiceSection = () => {
                 <Stack
                   direction={{ xs: "column", sm: "row" }}
                   gap={"30px"}
+                  fontWeight={"400"}
                   mt={4}
                 >
                   <Stack direction={"row"} alignItems={"center"} gap={2}>
                     <img src={checkIcon} alt="check-icon" width={"20px"} />
-                    <Typography color="#fff">PPD ishlab chiqish</Typography>
+                    <Typography color="#FFFFFFCC" fontWeight={"400"}>
+                      PPD ishlab chiqish
+                    </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} gap={2}>
                     <img src={checkIcon} alt="check-icon" width={"20px"} />
-                    <Typography color="#fff">PPD ishlab chiqish</Typography>
+                    <Typography color="#FFFFFFCC" fontWeight={"400"}>
+                      PPD ishlab chiqish
+                    </Typography>
                   </Stack>
                 </Stack>
               </div>

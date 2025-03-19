@@ -9,6 +9,11 @@ const HeroSection = ({
   descColor,
   titleMaxWidth,
   descMaxWidth,
+  btnBack,
+  btnRadius,
+  buttonTitle,
+  titleSize,
+  news,
 }) => {
   return (
     <Stack alignItems={"center"} textAlign={"center"}>
@@ -20,9 +25,9 @@ const HeroSection = ({
           letterSpacing: "35%",
           color: "#1351D8",
           letterSpacing: "1px",
-          padding: "10px 20px",
-          backgroundColor: "#1351D81A",
-          borderRadius: "10px",
+          padding: "14px 20px",
+          background: `${btnBack ? btnBack : "#1351D81A"}`,
+          borderRadius: `${btnRadius ? btnRadius : "10px"}`,
         }}
       >
         {subtitle && subtitle}
@@ -31,7 +36,7 @@ const HeroSection = ({
         sx={{
           fontFamily: "Yantramanav",
           fontWeight: 500,
-          fontSize: "75px",
+          fontSize: `${titleSize ? titleSize : "75px"}`,
           lineHeight: "66px",
           maxWidth: `${titleMaxWidth ? titleMaxWidth : "100%"}`,
           color: `${titleColor ? titleColor : "#212529"}`,
@@ -64,6 +69,26 @@ const HeroSection = ({
       >
         {desc && desc}
       </Typography>
+      {news ? (
+        <Typography
+          sx={{
+            margin: "37px auto 0",
+            fontWeight: 500,
+            fontSize: "14px",
+            lineHeight: "10px",
+            letterSpacing: "35%",
+            background: "#1351D8",
+            letterSpacing: "1px",
+            padding: "14px 19px",
+            color: "#FFFFFF",
+            borderRadius: "10px",
+          }}
+        >
+          {buttonTitle && buttonTitle}
+        </Typography>
+      ) : (
+        <></>
+      )}
     </Stack>
   );
 };

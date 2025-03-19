@@ -55,6 +55,7 @@ const Cards = () => {
               sx={{
                 fontWeight: "400",
                 fontSize: "12px",
+                lineHeight: "18px",
                 color: "#212529",
               }}
             >
@@ -94,6 +95,7 @@ const Cards = () => {
               sx={{
                 fontWeight: "400",
                 fontSize: "12px",
+                lineHeight: "18px",
                 color: "#212529",
               }}
             >
@@ -133,6 +135,7 @@ const Cards = () => {
               sx={{
                 fontWeight: "400",
                 fontSize: "12px",
+                lineHeight: "18px",
                 color: "#212529",
               }}
             >
@@ -172,6 +175,7 @@ const Cards = () => {
               sx={{
                 fontWeight: "400",
                 fontSize: "12px",
+                lineHeight: "18px",
                 color: "#212529",
               }}
             >

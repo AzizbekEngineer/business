@@ -40,6 +40,7 @@ const About = () => {
           }
           titleMaxWidth={"1185px"}
           descMaxWidth={"685px"}
+          descColor={"#000000"}
         />
       </Box>
       <Cards />

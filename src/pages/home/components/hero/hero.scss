@@ -40,7 +40,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 14.4px;
-        letter-spacing: 35%;
+        letter-spacing: 5.6px;
         color: #1351D8;
     }
 
@@ -84,6 +84,11 @@
 
         span {
             margin-right: 5px;
+        }
+
+        svg {
+            font-size: 10px;
+            color: #1351D8;
         }
     }
 

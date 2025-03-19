@@ -83,6 +83,10 @@ const News = () => {
             }
             titleColor={"#fff"}
             descColor={"#FFFFFFE6"}
+            btnBack={"#FFFFFF"}
+            btnRadius={"20px"}
+            buttonTitle={"Uchrashuvni hoziroq band qiling"}
+            news={true}
           />
         </Box>
       </Box>

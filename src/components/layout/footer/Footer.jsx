@@ -1,7 +1,7 @@
 import React from "react";
 import footerLogo from "../../../assets/icons/footerLogo.png";
-import youtube from "../../../assets/icons/youtube.svg";
-import work from "../../../assets/icons/work.svg";
+import footerIcon1 from "../../../assets/icons/footerIcon1.svg";
+import footerIcon2 from "../../../assets/icons/footerIcon2.svg";
 import shop from "../../../assets/icons/shop.svg";
 import web from "../../../assets/icons/web.svg";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
@@ -28,10 +28,8 @@ const Footer = () => {
               <button className="footer__btn">Boshlash</button>
             </form>
             <div className="footer__icons">
-              <img src={youtube} alt="" />
-              <img src={web} alt="" />
-              <img src={work} alt="" />
-              <img src={shop} alt="" />
+              <img src={footerIcon2} alt="" />
+              <img src={footerIcon1} alt="" />
             </div>
           </div>
           <div className="footer__right">

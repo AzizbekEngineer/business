@@ -19,7 +19,7 @@ const Group = () => {
               "Bizning jamoamiz jahon darajasidagi mutaxassislardan iborat"
             }
           />
-          <p className="group__desc">
+          <p className="group__top__desc">
             Biz sizni konsultatsiyamiz asosini tashkil etuvchi iqtidorli
             shaxslar bilan tanishtirishdan g'ururlanamiz, ularning har biri
             o'zining noyob mahorati va boy tajribasini o'zgartiruvchi

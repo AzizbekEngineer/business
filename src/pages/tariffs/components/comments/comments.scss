@@ -57,20 +57,17 @@
     }
 
     h2 {
-      font-size: 40px;
-      margin: 0 0 10px 0;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 41px;
+      color: #1351D8;
+      padding-bottom: 20px;
 
       span {
         color: #1c1c1c;
       }
     }
 
-    p {
-      margin: 20px 0;
-      color: #666;
-      font-size: 14px;
-    }
+
 
     ul {
       list-style: none;
@@ -107,8 +104,8 @@
       padding: 10px;
       border: none;
       border-radius: 5px;
-      color: #ffffff;
-      font-size: 16px;
+      color: #F9F9F9;
+      font-size: 13px;
       cursor: pointer;
       transition: background-color 0.3s ease;
       background: #1351d8;
@@ -117,6 +114,27 @@
         background-color: #1351d8;
       }
     }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #1351D8;
+    padding-bottom: 14px;
+
+    span {
+      color: #1C1C1C;
+    }
+  }
+
+  &__user {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #1C1C1CB3;
+    padding-bottom: 30px;
   }
 
   @media (max-width: 1050px) {

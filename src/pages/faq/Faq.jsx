@@ -26,8 +26,9 @@ const Faq = () => {
           desc={
             "Bizning tez-tez so'raladigan savollar bo'limiga xush kelibsiz, biz mijozlarimiz va tashrif buyuruvchilarimiz tez-tez uchraydigan savollar va so'rovlarni ko'rib chiqamiz."
           }
-          titleMaxWidth={"1051px"}
+          titleMaxWidth={"1081px"}
           descMaxWidth={"728px"}
+          titleSize={"66px"}
         />
       </Box>
       <div className="container">
