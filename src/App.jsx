@@ -19,7 +19,7 @@ const App = () => {
           <Route path="tariffs" element={<Tariffs />} />
           <Route path="news" element={<News />} />
           <Route path="faq" element={<Faq />} />
-          <Route path="inner" element={<Inner />} />
+          <Route path="tariffs/:tariff" element={<Inner />} />
           <Route path="partners" element={<Partners />} />
         </Routes>
       </Layout>

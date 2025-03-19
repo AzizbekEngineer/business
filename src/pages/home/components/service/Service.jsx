@@ -2,6 +2,8 @@ import React from "react";
 import SectionHeader from "../../../../components/section-header/SectionHeader";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import "./service.scss";
+import { useNavigate } from "react-router";
+import { packages } from "../../../../constants/data";
 
 const Service = ({
   bgColor,
@@ -12,11 +14,12 @@ const Service = ({
   title,
   btnTitle,
 }) => {
-  const packages = [
-    { name: "Silver ", price: "3$", color: "#007bff" },
-    { name: "Gold ", price: "10$", color: "#007bff" },
-    { name: "Platinum ", price: "25$", color: "#007bff" },
-  ];
+  const navigate = useNavigate();
+
+  const handleClickPkg = (id) => {
+    navigate(`/tariffs/${id}`);
+  };
+
   return (
     <div className="service" style={{ background: bgColor }}>
       <div className="container">
@@ -44,15 +47,15 @@ const Service = ({
               <h2 style={{ color: pkg.color }}>
                 {pkg.price} <span>/year</span>
               </h2>
-              <p className="comments__name">
-                {pkg.name} <span>package</span>
-              </p>
-              <p className="comments__user">Billed annually</p>
+              <p>{pkg.name}</p>
+              <p>Billed annually</p>
               <ul>
                 <li>Customized training play for employer</li>
                 <li>Free account on platform</li>
               </ul>
-              <button>Get started</button>
+              <button onClick={() => handleClickPkg(pkg.id)}>
+                Get started
+              </button>
             </div>
           ))}
         </div>

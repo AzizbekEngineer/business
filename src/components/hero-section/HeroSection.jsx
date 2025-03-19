@@ -28,6 +28,7 @@ const HeroSection = ({
           padding: "14px 20px",
           background: `${btnBack ? btnBack : "#1351D81A"}`,
           borderRadius: `${btnRadius ? btnRadius : "10px"}`,
+          textTransform: "uppercase",
         }}
       >
         {subtitle && subtitle}
