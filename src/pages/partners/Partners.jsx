@@ -7,11 +7,14 @@ import Contact from "../../components/contact/Contact";
 import buildingImage from "../../assets/images/partnerBg.svg";
 import buildingImage2 from "../../assets/images/partnerBg2.svg";
 
-import React from "react";
+import React, { useEffect } from "react";
 import PartnerImages from "./components/partnerImages/PartnerImages";
 import PartnerCard from "./components/PartnerCard";
 
 const Partners = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <Box>
       <Box

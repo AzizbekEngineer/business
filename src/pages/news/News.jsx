@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../../components/hero-section/HeroSection";
 import { Box, Grid } from "@mui/material";
 import SectionHeader from "../../components/section-header/SectionHeader";
@@ -71,6 +71,9 @@ const fakeData = [
 ];
 
 const News = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <>
       <Box py={"100px"} bgcolor={"#1C1C1C"}>
