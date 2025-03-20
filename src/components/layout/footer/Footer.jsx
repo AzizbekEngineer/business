@@ -140,7 +140,7 @@ const Footer = () => {
             <InstagramIcon />
           </div>
           <p className="footer__bottom__desc">
-            improve tomonidan himoyalangan, 2025 bo'lsin
+            improve tomonidan himoyalangan, 2025
           </p>
         </div>
       </div>

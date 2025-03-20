@@ -1,5 +1,5 @@
 import { Box, Grid2, Stack } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import SectionHeader from "../../../../components/section-header/SectionHeader";
 import "./specialization.scss";
 import strategy from "../../../../assets/icons/strategy.svg";
@@ -11,6 +11,37 @@ import Code from "../../../../components/code/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 
 const Specialization = () => {
+  const [activeId, setActiveId] = useState(1);
+
+  const data = [
+    {
+      id: 1,
+      icon: strategy,
+      btnName: "Startaplar uchun dasturlar",
+      title: " Muvaffaqiyat uchun biznes strategiyangizni oshirish",
+      content:
+        "Doimiy rivojlanib borayotgan biznes landshaftida mustahkam va aniq strategiyalar sizning muvaffaqiyat sari yo'l-yo'riq ko'rsatuvchi vositadir. Strategic Business Solutions kompaniyasida biz oddiy rejalardan tashqari biznes strategiyalarini ishlab chiqishga ixtisoslashganmiz.  Ular o'sish, innovatsiyalar, yechimlar va bu farovonlik uchun mustahkam rejalardir.",
+    },
+    {
+      id: 2,
+      icon: optimization,
+      btnName: "Huquqiy va moliyaviy maslahatlar",
+      title: "Data Science",
+      content:
+        "Explore data analysis, machine learning, and AI with real-world projects.",
+    },
+    {
+      id: 3,
+      icon: optimization,
+      btnName: "Moliyalashtirish imkoniyatlari",
+      title: "Cyber Security",
+      content:
+        "Doimiy rivojlanib borayotgan biznes landshaftida mustahkam va aniq strategiyalar sizning muvaffaqiyat sari yo'l-yo'riq ko'rsatuvchi vositadir. Strategic Business Solutions kompaniyasida biz oddiy rejalardan tashqari biznes strategiyalarini ishlab chiqishga ixtisoslashganmiz. Ular o'sish, innovatsiyalar, yechimlar va bu farovonlik uchun mustahkam rejalardir.",
+    },
+  ];
+
+  const activeItem = data.find((item) => item.id === activeId);
+
   return (
     <Box
       component={"section"}
@@ -35,53 +66,43 @@ const Specialization = () => {
           title={"Bizning kompaniyamiz siz uchun nima qilishi kerak"}
         />
         <Box className="specialization">
-          <div className="specialization__cards">
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={strategy} alt="" />
-              </div>
-              <span>Startaplar uchun dasturlar</span>
-            </div>
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={optimization} alt="" />
-              </div>
-              <span>Huquqiy va moliyaviy maslahatlar</span>
-            </div>
-            <div className="specialization__card">
-              <div className="specialization__icon">
-                <img src={optimization} alt="" />
-              </div>
-              <span>Moliyalashtirish imkoniyatlari</span>
-            </div>
-          </div>
-          <div className="specialization__box">
-            <div className="specialization__left">
-              <img src={specialization} alt="" />
-            </div>
-            <Code>
-              <div className="specialization__info">
-                <div className="specialization__info__icon">
-                  <img src={strategy} alt="" />
+          <div className="specialization__cards specialization__tabs">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className={`specialization__card tab ${
+                  activeId === item.id ? "active" : ""
+                }`}
+                onClick={() => setActiveId(item.id)}
+              >
+                <div className="specialization__icon">
+                  <img src={item.icon} alt="" />
                 </div>
-                <span>Muvaffaqiyat uchun biznes strategiyangizni oshirish</span>
+                <span>{item.btnName}</span>
               </div>
-              <p className="specialization__desc">
-                Doimiy rivojlanib borayotgan biznes landshaftida mustahkam va
-                aniq strategiyalar sizning muvaffaqiyat sari yo'l-yo'riq
-                ko'rsatuvchi vositadir. Strategic Business Solutions
-                kompaniyasida biz oddiy rejalardan tashqari biznes
-                strategiyalarini ishlab chiqishga ixtisoslashganmiz.
-                <br />
-                <br />
-                Ular o'sish, innovatsiyalar, yechimlar va bu farovonlik uchun
-                mustahkam rejalardir.
-              </p>
-              <button className="specialization__btn">
-                <NorthEastIcon />
-              </button>
-            </Code>
+            ))}
           </div>
+          {activeItem ? (
+            <div className="specialization__box">
+              <div className="specialization__left">
+                <img src={specialization} alt="" />
+              </div>
+              <Code>
+                <div className="specialization__info">
+                  <div className="specialization__info__icon">
+                    <img src={strategy} alt="" />
+                  </div>
+                  <span>{activeItem.title}</span>
+                </div>
+                <p className="specialization__desc">{activeItem.content}</p>
+                <button className="specialization__btn">
+                  <NorthEastIcon />
+                </button>
+              </Code>
+            </div>
+          ) : (
+            <></>
+          )}
         </Box>
       </Stack>
     </Box>

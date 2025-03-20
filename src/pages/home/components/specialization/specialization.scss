@@ -1,8 +1,27 @@
 .specialization {
+    position: static;
+    z-index: 2;
+
     &__cards {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    &__tabs {
+        padding: 35px 0;
+
+        .tab {
+            transition: 0.3s;
+
+            &.active {
+                background: #1351D8;
+
+                span {
+                    color: white;
+                }
+            }
+        }
     }
 
     &__card {

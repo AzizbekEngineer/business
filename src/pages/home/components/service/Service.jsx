@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "../../../../components/section-header/SectionHeader";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import "./service.scss";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { packages } from "../../../../constants/data";
 
 const Service = ({
@@ -33,13 +33,15 @@ const Service = ({
             titleAlign={"center"}
             textStart={"start"}
           />
-          <button
-            className="service__btn"
-            style={{ background: btnBack, color: btnColor }}
-          >
-            <span>{btnTitle}</span>
-            <NorthEastIcon />
-          </button>
+          <Link to={"https://forms.gle/TpM4aYHyYdaAypc37"}>
+            <button
+              className="service__btn"
+              style={{ background: btnBack, color: btnColor }}
+            >
+              <span>{btnTitle}</span>
+              <NorthEastIcon />
+            </button>{" "}
+          </Link>
         </div>
         <div className="comments__cards">
           {packages.map((pkg, index) => (

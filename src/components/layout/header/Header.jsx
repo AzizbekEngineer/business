@@ -87,7 +87,7 @@ const Header = () => {
                   FAQ
                 </NavLink>
               </li>
-              <li className="header__nav__lang">
+              {/* <li className="header__nav__lang">
                 <NavLink
                   onClick={() => setHide(false)}
                   className={"header__nav__link"}
@@ -95,7 +95,7 @@ const Header = () => {
                 >
                   Uz
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="phone">

@@ -11,6 +11,7 @@
         display: grid;
         grid-template-columns: 1fr 655px;
         gap: 24px;
+        // background: yellow;
     }
 
     &__img {
@@ -23,6 +24,7 @@
             width: 100%;
             object-fit: cover;
             height: 100%;
+            border-radius: 10px;
         }
     }
 

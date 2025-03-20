@@ -19,9 +19,6 @@ const Partner = () => {
           <div className="partner__img">
             <img src={partner2} alt="" />
           </div>
-          <div className="partner__img">
-            <img src={partner3} alt="" />
-          </div>
         </div>
       </div>
     </div>
