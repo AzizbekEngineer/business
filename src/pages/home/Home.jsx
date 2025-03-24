@@ -51,7 +51,7 @@ const Home = () => {
   });
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <Specialization />
       <Partner />
       <Service
@@ -74,9 +74,9 @@ const Home = () => {
           descWidth={"512px"}
         />
         <Concepts data={fakeData} />
-        <NewsCard />
+        <NewsCard /> */}
         <Group />
-      </Stack>
+      {/* </Stack> */}
     </div>
   );
 };
