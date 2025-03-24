@@ -14,71 +14,69 @@ import Group from "./components/group/Group";
 import Service from "./components/service/Service";
 
 const fakeData = [
-  {
-    id: 1,
-    date: "Sep 16, 2024",
-    category: "Forex",
-    title:
-      "Birja bozorlari bugun texnologik aktsiyalar bilan aralash notada ochildi",
-    description:
-      "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
-    image: img1, // Rasmlar uchun relative yo‘l
-  },
-  {
-    id: 2,
-    date: "Sep 16, 2024",
-    category: "#sayohat",
-    title: "Avtomobil sanoati elektr transportda o‘zgaruvchan yo‘lni boshladi",
-    description:
-      "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
-    image: img2,
-  },
-  {
-    id: 3,
-    date: "Sep 16, 2024",
-    category: "#simply_lifestyle",
-    title:
-      "Sog'liqni saqlash sektori bemorlarni masofadan turib kuzatishga moslashmoqda",
-    description:
-      "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
-    image: img3,
-  },
+    {
+        id: 1,
+        date: "Sep 16, 2024",
+        category: "Forex",
+        title: "Birja bozorlari bugun texnologik aktsiyalar bilan aralash notada ochildi",
+        description:
+            "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
+        image: img1, // Rasmlar uchun relative yo‘l
+    },
+    {
+        id: 2,
+        date: "Sep 16, 2024",
+        category: "#sayohat",
+        title: "Avtomobil sanoati elektr transportda o‘zgaruvchan yo‘lni boshladi",
+        description:
+            "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
+        image: img2,
+    },
+    {
+        id: 3,
+        date: "Sep 16, 2024",
+        category: "#simply_lifestyle",
+        title: "Sog'liqni saqlash sektori bemorlarni masofadan turib kuzatishga moslashmoqda",
+        description:
+            "Bizning sayohatimiz aniq tasavvurga asoslangan - sanoatni shakllantiradigan va hayotni boyitadigan o'zgartiruvchi yechimlarning boshida bo'lish. Bu qarash bizning asosiy qadriyatlarimiz: mukammallik, innovatsiya, halollik va hamkorlikda chuqur ildiz otgan.",
+        image: img3,
+    },
 ];
 
 const Home = () => {
-  useEffect(() => {
-    window.scroll(0, 0);
-  });
-  return (
-    <div>
-      {/* <Hero />
-      <Specialization />
-      <Partner />
-      <Service
-        bgColor={"#1C1C1C"}
-        textColor={"#FFFFFF"}
-        btnColor={"#FFFFFF"}
-        btnBack={"#1351D8"}
-        subtitle={"BIZNING NARXLAR"}
-        title={"Tariflar haqida batafsil ma’lumot"}
-        btnTitle={"Tarish tanlashga yordam"}
-      />
-      <Opportunities />
-      <Stack gap={"50px"} className="container">
-        <SectionHeader
-          subtitle={"KUNLIK YANGILIKLAR"}
-          title={"Kundalik tushunchalar haqida ko'proq o'qing"}
-          desc={
-            "Axborot shakllanayotgan tez sur'atda dunyoda bizning kundalik yangiliklar xizmatimiz so'nggi o'zgarishlardan xabardor bo'lishdir"
-          }
-          descWidth={"512px"}
-        />
-        <Concepts data={fakeData} />
-        <NewsCard /> */}
-        <Group />
-      {/* </Stack> */}
-    </div>
-  );
+    useEffect(() => {
+        window.scroll(0, 0);
+    });
+    return (
+        <div>
+            <Hero />
+            <Specialization />
+            <Partner />
+            <Service
+                bgColor={"#1C1C1C"}
+                textColor={"#FFFFFF"}
+                btnColor={"#FFFFFF"}
+                btnBack={"#1351D8"}
+                subtitle={"BIZNING NARXLAR"}
+                title={"Tariflar haqida batafsil ma’lumot"}
+                btnTitle={"Tarish tanlashga yordam"}
+            />
+            <Opportunities />
+            <Stack gap={"50px"} className="container">
+                <SectionHeader
+                    subtitle={"KUNLIK YANGILIKLAR"}
+                    title={"Kundalik tushunchalar haqida ko'proq o'qing"}
+                    desc={
+                        "Axborot shakllanayotgan tez sur'atda dunyoda bizning kundalik yangiliklar xizmatimiz so'nggi o'zgarishlardan xabardor bo'lishdir"
+                    }
+                    descWidth={"512px"}
+                />
+                <Concepts data={fakeData} />
+                <NewsCard />
+            </Stack>
+            <Group /> 
+        </div>
+    );
 };
 
 export default Home;
